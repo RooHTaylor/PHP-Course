@@ -194,7 +194,9 @@ told you to think of a different number you would have to go through each line a
 number. This is one of the things that variables come in handy with.
 
 ``` {.php .numberLines}
+<?php
 $variablename = ‘value’;
+?>
 ```
 
 Variables are declared with a dollar sign and the variable name. Variable names follow the same scheme as other labels
@@ -244,16 +246,11 @@ website.
 
 ``` {.php .numberLines}
 <?php
-$foo =
-$foo =
-$foo =
-$foo =
+$foo = true; //Type Boolean bool(true)
+$foo = 10; //Type Integer int(10)
+$foo = “10”; //Type String String(2)
+$foo = 3.123; //Type Float float(3.123)
 ?>
-
-true; //Type Boolean bool(true)
-10; //Type Integer int(10)
-“10”; //Type String String(2)
-3.123; //Type Float float(3.123)
 ```
 
 ### Type Juggling ###
@@ -286,7 +283,7 @@ this code”.
 ``` {.php .numberLines}
 <?php
 if (5 == 5){
-echo ‘Yes! 5 does equal 5.’;
+    echo ‘Yes! 5 does equal 5.’;
 }
 ?>
 ```
@@ -299,7 +296,7 @@ require a true condition to execute, even if the condition is that something mus
 <?php
 $foo = false;
 if (!$foo){
-echo ‘Yes! $foo was false.’;
+    echo ‘Yes! $foo was false.’;
 }
 ?>
 ```
@@ -313,10 +310,14 @@ With if statements you can also have multiple conditions using the AND/OR operat
 <?php
 $foo = false;
 if (!$foo && 5 == 5 || 4 == 4){
-echo ‘Yes! $foo was false AND either 5 equals 5 OR 4 equals It is very important to think about the logic of your conditions. If you have two conditions and use the AND operator,
+    echo ‘Yes! $foo was false AND either 5 equals 5 OR 4 equals 5 OR 4 equals 4.’;
+}
+?>
+```
+
+It is very important to think about the logic of your conditions. If you have two conditions and use the AND operator,
 BOTH conditions must prove true. If you use the OR operator, AT LEAST one or both conditions must prove true. In this
 example, $foo must be false AND EITHER 5 must equal 5 OR 4 must equal 4.
-```
 
 ### Elseif ###
 
@@ -328,9 +329,9 @@ way to go. An elseif follows an if, and is only evaluated if the preceding ifs a
 <?php
 $foo = true;
 if (!$foo){
-echo ‘$foo was false!’;
+    echo ‘$foo was false!’;
 } elseif ($foo){
-echo ‘$foo was true!’;
+    echo ‘$foo was true!’;
 }
 ?>
 ```
@@ -350,11 +351,11 @@ statement is skipped.
 <?php
 $foo = true;
 if (!$foo){
-echo ‘$foo was false!’;
+    echo ‘$foo was false!’;
 } elseif ($foo){
-echo ‘$foo was true!’;
+    echo ‘$foo was true!’;
 } else {
-echo ‘$foo was neither true nor false!’;
+    echo ‘$foo was neither true nor false!’;
 }
 ?>
 ```
@@ -379,7 +380,7 @@ to functions. For our example we will use one parameter $text.
 ``` {.php .numberLines}
 <?php
 function showText($text){
-echo $text;
+    echo $text;
 }
 ?>
 ```
@@ -390,7 +391,7 @@ unless they’re called by name. You can call user-defined functions the same wa
 ``` {.php .numberLines}
 <?php
 function showText($text){
-echo $text;
+    echo $text;
 }
 showText(‘Hello World!’);
 ?>
@@ -405,7 +406,7 @@ Let’s try something else. Let’s have the function return it to be output.
 ``` {.php .numberLines}
 <?php
 function showText($text){
-return $text;
+    return $text;
 }
 echo showText(‘Hello World!’);
 ?>
@@ -456,9 +457,9 @@ echo $a[0];
 $a[0] = ‘new value1’; //Only sets index (int)0
 $a[‘0’] = ‘Different than (int)0’; //String key of ‘0’ is different than (int)0
 $b = array(‘key1’ => ‘value1’,
-‘key2’ => ‘value2’,
-‘key3’ => ‘value3’
-);
+           ‘key2’ => ‘value2’,
+           ‘key3’ => ‘value3’
+     );
 $b[] = ‘blank’; //Append to the array. Takes next available (int)key
 print_r($a);
 print_r($b);
@@ -493,8 +494,8 @@ of that iteration.
 <?php
 $i = 0;
 while ($i <= 10){
-echo $i . ‘<br>’;
-$i++;
+    echo $i . ‘<br>’;
+    $i++;
 }
 ?>
 ```
@@ -509,8 +510,8 @@ checked.
 <?php
 $i = 0;
 do {
-echo $i . ‘<br>’;
-$i++;
+    echo $i . ‘<br>’;
+    $i++;
 } while ($i < 0);
 ?>
 ```
@@ -536,23 +537,23 @@ For loops also support the break statement, to end execution at any point during
 <?php
 /* example 1 */
 for ($i = 1; $i <= 10; $i++){
-echo $i;
+    echo $i;
 }
 /* example 2 */
 for ($i = 1; ; $i++){
-if ($i > 10) {
-break;
-}
-echo $i;
+    if ($i > 10) {
+        break;
+    }
+    echo $i;
 }
 /* example 3 */
 $i = 1;
 for (; ; ) {
-if ($i > 10){
-break;
-}
-echo $i;
-$i++;
+    if ($i > 10){
+        break;
+    }
+    echo $i;
+    $i++;
 }
 /* example 4 */
 for ($i = 1, $j = 0; $i <= 10; $j += $i, print $i, $i++);
@@ -572,7 +573,7 @@ use.
 <?php
 $i = array(‘value1’, ‘value 2’, ‘value3’);
 foreach ($i as $value){
-echo $value . ‘<br>’;
+    echo $value . ‘<br>’;
 }
 ?>
 ```
@@ -586,7 +587,7 @@ alternate syntax allowing access to the key as well.
 $i = array(‘value1’, ‘value 2’, ‘value3’);
 print_r($i);
 foreach ($i as $key => $value){
-$i[$key] = ‘newvalue’ . $key;
+    $i[$key] = ‘newvalue’ . $key;
 }
 print_r($i);
 ?>
@@ -719,9 +720,9 @@ fetch the data.
 $db = new mysqli(‘localhost’, ‘username’, ‘password’, ‘database_name’);
 $res = $db->query(“SELECT * FROM people WHERE id <= 5”);
 if ($res->num_rows > 1){
-while ($row = $res->fetch_array(MYSQL_NUM)){
-$people[] = $row;
-}
+    while ($row = $res->fetch_array(MYSQL_NUM)){
+        $people[] = $row;
+    }
 }
 ?>
 ```
