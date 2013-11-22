@@ -64,7 +64,7 @@ PHP is uniquely suited for web design, because it uses delimiters for its code. 
 
 ## Hello World! And Constructs ##
 
-The first instruction we are going to learn is how to output text. To do that we are going to use the PHP construct echo. A construct is an element or command that is of the most basic nature. i.e. the language couldn’t exist without it.
+The first instruction we are going to learn is how to output text. To do that we are going to use the PHP construct `echo`. A construct is an element or command that is of the most basic nature. i.e. the language couldn’t exist without it.
 
 ``` {.php .numberLines}
 <?php
@@ -100,7 +100,7 @@ A major part of any programming language is functions. You’ll also hear them r
 
 Functions can be built-in, come as part of an extension (plugin; an add-on to PHP that extends its functionality), or can be user-defined. Having the ability to create your own functions makes the programming possibilities virtually endless.
 
-Let’s use a function that takes uppercase text and turns it into lowercase text. In PHP, this function is strtolower().
+Let’s use a function that takes uppercase text and turns it into lowercase text. In PHP, this function is `strtolower()`.
 
 ``` {.php .numberLines}
 <?php
@@ -108,13 +108,13 @@ echo strtolower(‘Hello World!’);
 ?>
 ```
 
-The function strtolower() accepts one parameter, which is the string that you want to convert to lowercase. A parameter is a piece of information that gets passed to a function, and is placed inside the parenthesis (with multiple parameters separated by commas). In this case, the parameter was “Hello World!” which was passed to the function, manipulated, and then returned. Generally speaking, all functions will return a value of some kind, even if a return value is not specifically declared. The return value of this function is passed directly to the echo construct and thus is printed.
+The function `strtolower()` accepts one parameter, which is the string that you want to convert to lowercase. A parameter is a piece of information that gets passed to a function, and is placed inside the parenthesis (with multiple parameters separated by commas). In this case, the parameter was “Hello World!” which was passed to the function, manipulated, and then returned. Generally speaking, all functions will return a value of some kind, even if a return value is not specifically declared. The return value of this function is passed directly to the echo construct and thus is printed.
 
 ## PHP.net ##
 
 It is inevitable that you will forget the specific order or set of required parameters for functions, and there are several resources that can assist you. Some software will have tool-tips that pop up when it recognizes the function and tell you what parameters are needed, but it is unwise to rely on those. When in doubt a Google search will most likely get the results, but the best resource you have is PHP.net.
 
-This website contains the documentation for PHP along with tons of user-contributed content to help you. Let’s go there and look up strtolower().
+This website contains the documentation for PHP along with tons of user-contributed content to help you. Let’s go there and look up `strtolower()`.
 
 [Conduct a brief walkthrough of PHP.net and search for the function. Highlight the examples, related functions, and
 user contributed content.]
@@ -176,9 +176,9 @@ echo ‘And the number of the thinking shall be ‘ . $x . ’.<br>’;
 ?>
 ```
 
-When you view this page you’ll see that it’s the same as before with the variable instead of the actual number. Like I said before, variables are like placeholders so every time $x is used it gets substituted for the value of $x, which is 10.
+When you view this page you’ll see that it’s the same as before with the variable instead of the actual number. Like I said before, variables are like placeholders so every time `$x` is used it gets substituted for the value of `$x`, which is 10.
 
-Variables can be substituted for any value. For example, as a parameter for the strtolower() function.
+Variables can be substituted for any value. For example, as a parameter for the `strtolower()` function.
 
 ### Variable Challenge ###
 
@@ -256,7 +256,7 @@ if (!$foo){
 ?>
 ```
 
-In this example, the condition is that the variable $foo must be false. However, if $foo is false, the condition still proves true because it is true that $foo is false.
+In this example, the condition is that the variable `$foo` must be false. However, if `$foo` is false, the condition still proves true because it is true that `$foo` is false.
 
 With if statements you can also have multiple conditions using the AND/OR operators.
 
@@ -269,7 +269,7 @@ if (!$foo && 5 == 5 || 4 == 4){
 ?>
 ```
 
-It is very important to think about the logic of your conditions. If you have two conditions and use the AND operator, BOTH conditions must prove true. If you use the OR operator, AT LEAST one or both conditions must prove true. In this example, $foo must be false AND EITHER 5 must equal 5 OR 4 must equal 4.
+It is very important to think about the logic of your conditions. If you have two conditions and use the AND operator, BOTH conditions must prove true. If you use the OR operator, AT LEAST one or both conditions must prove true. In this example, `$foo` must be false AND EITHER 5 must equal 5 OR 4 must equal 4.
 
 ### Elseif ###
 
@@ -313,7 +313,7 @@ Create a series of conditions using if, elseif, and else. For an extra challenge
 
 ## User Defined Functions ##
 
-Let’s go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write ‘function’ followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter $text.
+Let’s go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write ‘function’ followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
 
 ``` {.php .numberLines}
 <?php
@@ -365,7 +365,7 @@ In PHP there are a few variables that are referred to as “superglobal” varia
 * `$_POST` - Contains the HTTP POST variables passed to the script.
 * `$_COOKIE` - Contains the HTTP COOKIE variables passed to the script.
 * `$_SERVER` - Contains information about the script, server, and client.
-* `$_SESSION` - This is the PHP session variable that is generated when you run the session_start() function. The values of this variable are stored in the /tmp directory on the server and are set manually at first, but are loaded automatically afterwards, until the session is expired.
+* `$_SESSION` - This is the PHP session variable that is generated when you run the `session_start()` function. The values of this variable are stored in the /tmp directory on the server and are set manually at first, but are loaded automatically afterwards, until the session is expired.
 * `$GLOBALS` - This is the alternative to the globals keyword. This super global contains every variable that is currently defined.
 
 ## Arrays ##
@@ -600,7 +600,7 @@ if ($res->num_rows > 1){
 ?>
 ```
 
-The while loop is the method of retrieving multiple rows from a return. Using the while loop in this way advances the internal counter of the result which keeps track of the query. Each time the while loop advances the internal counter does as well, making it stop once there are no longer any rows to use. This example uses the fetch_array() function which returns the current row as an array. You can either have it use a numerical index or an associative index. The associative index uses the column names as the key values when the array is returned.
+The while loop is the method of retrieving multiple rows from a return. Using the while loop in this way advances the internal counter of the result which keeps track of the query. Each time the while loop advances the internal counter does as well, making it stop once there are no longer any rows to use. This example uses the `fetch_array()` function which returns the current row as an array. You can either have it use a numerical index or an associative index. The associative index uses the column names as the key values when the array is returned.
 
 This is done using the two constants MYSQL_NUM and MYSQL_ASSOC. Constants are like variables but aren’t referenced the same way, and aren’t designed to have their values changed.
 
