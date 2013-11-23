@@ -142,7 +142,7 @@ The function `strtolower()` accepts one parameter, which is the string that you 
 
 ## PHP.net ##
 
-It is inevitable that you will forget the specific order or set of required parameters for functions, and there are several resources that can assist you. Some software will have tool-tips that pop up when it recognizes the function and tell you what parameters are needed, but it is unwise to rely on those. When in doubt a Google search will most likely get the results, but the best resource you have is PHP.net.
+It is inevitable that you will forget the specific order or set of required parameters for functions, and there are several resources that can assist you. Some software will have tool-tips that pop up when it recognizes the function and tell you what parameters are needed, but it is unwise to rely on those. When in doubt a Google search will most likely get the results, but the best resource you have is [PHP.net](http://php.net/), PHP's official website.
 
 This website contains the documentation for PHP along with tons of user-contributed content to help you. Let's go there and look up `strtolower()`.
 
