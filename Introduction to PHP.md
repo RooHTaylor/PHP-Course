@@ -10,9 +10,9 @@ This document and all supporting documents are licensed under the [Creative Comm
 
 ## A Note For Instructors ##
 
-This lesson plan is designed to provide an outline for the flow of the lesson and does not contain all the information to be taught. If it contained all the information we’d be publishing a novel, not teaching a condensed PHP and SQL course. Please stress the importance of questions, as student questions will assist with covering topics and understanding. I have tried to include the more important points, but it is up to you to make sure you’re talking about each topic in more detail than is written about in here.
+This lesson plan is designed to provide an outline for the flow of the lesson and does not contain all the information to be taught. If it contained all the information we'd be publishing a novel, not teaching a condensed PHP and SQL course. Please stress the importance of questions, as student questions will assist with covering topics and understanding. I have tried to include the more important points, but it is up to you to make sure you're talking about each topic in more detail than is written about in here.
 
-In addition, this course is designed to have the instructor typing code live on screen in-front of the students, with the students following along. Make sure you’re typing the code examples so that they can get a visual of these concepts and try them out. Don’t be afraid to take small detours to explain subjects and allow the students to participate.
+In addition, this course is designed to have the instructor typing code live on screen in-front of the students, with the students following along. Make sure you're typing the code examples so that they can get a visual of these concepts and try them out. Don't be afraid to take small detours to explain subjects and allow the students to participate.
 
 Note: Please take notes! The more this course is taught, the better it will ultimately become. Please take notes on the back of each page to be passed on to the course developer. Notes should include any points or code that should be included in the lesson plan, points or code that are irrelevant and should be removed, time frames for each topic (i.e. how long did it take to cover the whole topic), and any other information that you think is relevant.
 
@@ -26,33 +26,33 @@ Instructor and assistants introduce themselves. Provide a brief description abou
 
 Allow each student to introduce themselves and why they want to take the course. i.e. what they hope to gain.
 
-QUESTIONS! – Questions are very important to the learning process. A lot of material will be covered very quickly in this course, and it is important that you ask questions if you need clarification on a topic. Don’t be afraid to put your hand up!
+QUESTIONS! – Questions are very important to the learning process. A lot of material will be covered very quickly in this course, and it is important that you ask questions if you need clarification on a topic. Don't be afraid to put your hand up!
 
 ## What is PHP? ##
 
 PHP is a programming language that was originally designed in 1994 as a tool to help web developers manipulate submitted form data.
 
-Wikipedia says that “PHP is a server-side scripting language designed for web development, but also used as a generalpurpose programming language.” By breaking that definition down, we can get a better understanding of how PHP is intended to be used.
+Wikipedia says that "PHP is a server-side scripting language designed for web development, but also used as a generalpurpose programming language." By breaking that definition down, we can get a better understanding of how PHP is intended to be used.
 
 ## Breakdown of Server-side and Scripting ##
 
-“Server-side” – Is a term that comes from the client server model. A very basic description of the client server model is a structure of communication where the server contains data and the client requests and receives the data. Viewing a webpage is an example of this. Your web browser is the client and the web server contains the page you want to view (the data). When you browse to google.ca, your browser sends a request to Google’s web server saying “Please show me this page”. The web server parses the file and executes any code that needs to be executed, and then sends the output back to the client saying “Here is the page you asked for.”
+"Server-side" – Is a term that comes from the client server model. A very basic description of the client server model is a structure of communication where the server contains data and the client requests and receives the data. Viewing a webpage is an example of this. Your web browser is the client and the web server contains the page you want to view (the data). When you browse to google.ca, your browser sends a request to Google's web server saying "Please show me this page". The web server parses the file and executes any code that needs to be executed, and then sends the output back to the client saying "Here is the page you asked for."
 
-* So “server-side” means that the PHP code is executed on the server, and only the output is passed back to the client.
+* So "server-side" means that the PHP code is executed on the server, and only the output is passed back to the client.
 
-“Scripting” – This term is often used to describe programming languages that do not need to be compiled into binaries to be executed. PHP is a language that is parsed, and executed in real time by the interpreter or code engine. A simple way of thinking about it, is that (much like a TV show script) a PHP script is a list of instructions that tell the code engine what to do.
+"Scripting" – This term is often used to describe programming languages that do not need to be compiled into binaries to be executed. PHP is a language that is parsed, and executed in real time by the interpreter or code engine. A simple way of thinking about it, is that (much like a TV show script) a PHP script is a list of instructions that tell the code engine what to do.
 
-* So “scripting” means that the language does not need to be compiled.
+* So "scripting" means that the language does not need to be compiled.
 
-There is a lot more to know about the history and capabilities of PHP, but this isn’t a history lesson. If you would like to do more research on your own time, we will talk about some resources later in the lesson.
+There is a lot more to know about the history and capabilities of PHP, but this isn't a history lesson. If you would like to do more research on your own time, we will talk about some resources later in the lesson.
 
-## PHP Files and “Hello World!” ##
+## PHP Files and "Hello World!" ##
 
 [Have students open a blank PHP file, and demonstrate live on screen]
 
-Let’s jump right in!
+Let's jump right in!
 
-Because PHP files are just “scripts” of instructions, they are essentially just text files that can be created, edited, and viewed with any text editor. Special applications like Adobe Dreamweaver have features built in like syntax highlighting or autocompleting function names or parameters. These applications can also assist with debugging by highlighting syntax errors in the code.
+Because PHP files are just "scripts" of instructions, they are essentially just text files that can be created, edited, and viewed with any text editor. Special applications like Adobe Dreamweaver have features built in like syntax highlighting or autocompleting function names or parameters. These applications can also assist with debugging by highlighting syntax errors in the code.
 
 ## Delimiters ##
 
@@ -65,11 +65,11 @@ PHP is uniquely suited for web design, because it uses delimiters for its code. 
 
 ## Hello World! And Constructs ##
 
-The first instruction we are going to learn is how to output text. To do that we are going to use the PHP construct `echo`. A construct is an element or command that is of the most basic nature. i.e. the language couldn’t exist without it.
+The first instruction we are going to learn is how to output text. To do that we are going to use the PHP construct `echo`. A construct is an element or command that is of the most basic nature. i.e. the language couldn't exist without it.
 
 ``` {.php .numberLines}
 <?php
-echo ‘Hello World!’;
+echo 'Hello World!';
 ?>
 ```
 
@@ -77,14 +77,14 @@ The semi-colon at the end of the line is very important. The semi-colon is place
 
 Save the file with the extension `.php` and upload it to your web space. When you name PHP files you should keep it simple and short. DO NOT use spaces or special characters other than dash and underscore in your file names. It is very poor programming practice to have long complicated names or special characters.
 
-Now view the file in a web browser. Congratulations! You’ve all successfully programmed in PHP.
+Now view the file in a web browser. Congratulations! You've all successfully programmed in PHP.
 
-So what just happened? Well, when you browsed to the file the web server passed it to the PHP code engine. The code engine parsed the file and executed all the code in between the delimiters; In this case, it output “hello world”. Then the web server passed the output back to your browser.
+So what just happened? Well, when you browsed to the file the web server passed it to the PHP code engine. The code engine parsed the file and executed all the code in between the delimiters; In this case, it output "hello world". Then the web server passed the output back to your browser.
 
 ``` {.php .numberLines}
 <?php
-echo ‘Hello World!’;
-?> echo ‘Hello World!’;
+echo 'Hello World!';
+?> echo 'Hello World!';
 ```
 
 So what happens if we had put that same instruction outside the delimiters?
@@ -97,25 +97,25 @@ To add comments to your PHP files you can use one of three methods. You can comm
 
 ## Functions, Parameters, and Return Values ##
 
-A major part of any programming language is functions. You’ll also hear them referred to as methods. A function is a collection of instructions that preform a specific action. Basically, functions perform a specific function.
+A major part of any programming language is functions. You'll also hear them referred to as methods. A function is a collection of instructions that preform a specific action. Basically, functions perform a specific function.
 
 Functions can be built-in, come as part of an extension (plugin; an add-on to PHP that extends its functionality), or can be user-defined. Having the ability to create your own functions makes the programming possibilities virtually endless.
 
-Let’s use a function that takes uppercase text and turns it into lowercase text. In PHP, this function is `strtolower()`.
+Let's use a function that takes uppercase text and turns it into lowercase text. In PHP, this function is `strtolower()`.
 
 ``` {.php .numberLines}
 <?php
-echo strtolower(‘Hello World!’);
+echo strtolower('Hello World!');
 ?>
 ```
 
-The function `strtolower()` accepts one parameter, which is the string that you want to convert to lowercase. A parameter is a piece of information that gets passed to a function, and is placed inside the parenthesis (with multiple parameters separated by commas). In this case, the parameter was “Hello World!” which was passed to the function, manipulated, and then returned. Generally speaking, all functions will return a value of some kind, even if a return value is not specifically declared. The return value of this function is passed directly to the echo construct and thus is printed.
+The function `strtolower()` accepts one parameter, which is the string that you want to convert to lowercase. A parameter is a piece of information that gets passed to a function, and is placed inside the parenthesis (with multiple parameters separated by commas). In this case, the parameter was "Hello World!" which was passed to the function, manipulated, and then returned. Generally speaking, all functions will return a value of some kind, even if a return value is not specifically declared. The return value of this function is passed directly to the echo construct and thus is printed.
 
 ## PHP.net ##
 
 It is inevitable that you will forget the specific order or set of required parameters for functions, and there are several resources that can assist you. Some software will have tool-tips that pop up when it recognizes the function and tell you what parameters are needed, but it is unwise to rely on those. When in doubt a Google search will most likely get the results, but the best resource you have is PHP.net.
 
-This website contains the documentation for PHP along with tons of user-contributed content to help you. Let’s go there and look up `strtolower()`.
+This website contains the documentation for PHP along with tons of user-contributed content to help you. Let's go there and look up `strtolower()`.
 
 [Conduct a brief walkthrough of PHP.net and search for the function. Highlight the examples, related functions, and
 user contributed content.]
@@ -130,7 +130,7 @@ As previously mentioned, a lot of the history of PHP is also on the website. If 
 
 ### Operators ###
 
-Let’s look at a bit of math; after all PHP is a programming language. Basic arithmetic is accomplished with the usual symbols `+`, `-`, `*` and `/` . These are known as operators. Let’s try them.
+Let's look at a bit of math; after all PHP is a programming language. Basic arithmetic is accomplished with the usual symbols `+`, `-`, `*` and `/` . These are known as operators. Let's try them.
 
 ``` {.php .numberLines}
 <?php
@@ -144,16 +144,16 @@ There are tons of other operators for numbers, strings, to quickly add or subtra
 
 ### Variables ###
 
-Easy as pie right? But up until now, we have only been outputting information. What if we wanted to store it temporarily to use in another part of the script? That’s where variables come in. In PHP variables are stored in memory while the script is executed and are deleted once the script terminates.
+Easy as pie right? But up until now, we have only been outputting information. What if we wanted to store it temporarily to use in another part of the script? That's where variables come in. In PHP variables are stored in memory while the script is executed and are deleted once the script terminates.
 
-Let’s jump right in. Pick a number between one and ten (inclusive) and write PHP code that outputs four lines of text, with each line including the number.
+Let's jump right in. Pick a number between one and ten (inclusive) and write PHP code that outputs four lines of text, with each line including the number.
 
 ``` {.php .numberLines}
 <?php
-echo ‘I am thinking of the number 10.<br>’;
-echo ‘10 is the number I am thinking of.<br>’;
-echo ‘The number 10 shall be the number.<br>’;
-echo ‘And the number of the thinking shall be 10.<br>’;
+echo 'I am thinking of the number 10.<br>';
+echo '10 is the number I am thinking of.<br>';
+echo 'The number 10 shall be the number.<br>';
+echo 'And the number of the thinking shall be 10.<br>';
 ?>
 ```
 
@@ -161,23 +161,23 @@ To make it easier to read when we output this, make sure to include an HTML line
 
 ``` {.php .numberLines}
 <?php
-$variablename = ‘value’;
+$variablename = 'value';
 ?>
 ```
 
-Variables are declared with a dollar sign and the variable name. Variable names follow the same scheme as other labels in PHP (alphanumeric and underscores). Think of variables like placeholders. Let’s try.
+Variables are declared with a dollar sign and the variable name. Variable names follow the same scheme as other labels in PHP (alphanumeric and underscores). Think of variables like placeholders. Let's try.
 
 ``` {.php .numberLines}
 <?php
 $x = 10;
-echo ‘I am thinking of the number ‘ . $x . ’.<br>’;
-echo $x . ’ is the number I am thinking of.<br>’;
-echo ‘The number ‘ . $x . ’ shall be the number.<br>’;
-echo ‘And the number of the thinking shall be ‘ . $x . ’.<br>’;
+echo 'I am thinking of the number ' . $x . '.<br>';
+echo $x . ' is the number I am thinking of.<br>';
+echo 'The number ' . $x . ' shall be the number.<br>';
+echo 'And the number of the thinking shall be ' . $x . '.<br>';
 ?>
 ```
 
-When you view this page you’ll see that it’s the same as before with the variable instead of the actual number. Like I said before, variables are like placeholders so every time `$x` is used it gets substituted for the value of `$x`, which is 10.
+When you view this page you'll see that it's the same as before with the variable instead of the actual number. Like I said before, variables are like placeholders so every time `$x` is used it gets substituted for the value of `$x`, which is 10.
 
 Variables can be substituted for any value. For example, as a parameter for the `strtolower()` function.
 
@@ -187,7 +187,7 @@ Make a script that assigns a variable, and then modifies it before outputting it
 
 ## Data Types ##
 
-You’ve already heard me talk a little about integers and Strings, and it’s time we talked about what those terms mean.
+You've already heard me talk a little about integers and Strings, and it's time we talked about what those terms mean.
 
 ### Integers ###
 
@@ -203,28 +203,28 @@ Booleans are the simplest data type. Booleans are `true` or `false`, and defined
 
 ### Floating Point Numbers ###
 
-Also known as “floats”, “doubles”, or “real numbers”. Floats are decimal or exponential numbers. We aren’t going to be working with them today, but if you would like to know more about them you can read about them on the PHP.net website.
+Also known as "floats", "doubles", or "real numbers". Floats are decimal or exponential numbers. We aren't going to be working with them today, but if you would like to know more about them you can read about them on the PHP.net website.
 
 ``` {.php .numberLines}
 <?php
 $foo = true; //Type Boolean bool(true)
 $foo = 10; //Type Integer int(10)
-$foo = “10”; //Type String String(2)
+$foo = "10"; //Type String String(2)
 $foo = 3.123; //Type Float float(3.123)
 ?>
 ```
 
 ### Type Juggling ###
 
-PHP variables are scalar. This means that they do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let’s play around with it a little.
+PHP variables are scalar. This means that they do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let's play around with it a little.
 
 ``` {.php .numberLines}
 <?php
-$a = ‘0’;
+$a = '0';
 var_dump($a);
 $a = $a + 2;
 var_dump($a);
-$a = 5 + “10 Little Piggies”;
+$a = 5 + "10 Little Piggies";
 var_dump($a);
 ?>
 ```
@@ -236,12 +236,12 @@ combining Strings with integers]
 
 ### `if` ###
 
-A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an `if` statement. An `if` statement is best described as “IF a specific condition proves true, execute this code”.
+A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an `if` statement. An `if` statement is best described as "IF a specific condition proves true, execute this code".
 
 ``` {.php .numberLines}
 <?php
 if (5 == 5){
-    echo ‘Yes! 5 does equal 5.’;
+    echo 'Yes! 5 does equal 5.';
 }
 ?>
 ```
@@ -252,7 +252,7 @@ In this example, the condition is that 5 must equal 5. And of course the answer 
 <?php
 $foo = false;
 if (!$foo){
-    echo ‘Yes! $foo was false.’;
+    echo 'Yes! $foo was false.';
 }
 ?>
 ```
@@ -265,7 +265,7 @@ With `if` statements you can also have multiple conditions using the AND/OR oper
 <?php
 $foo = false;
 if (!$foo && 5 == 5 || 4 == 4){
-    echo ‘Yes! $foo was false AND either 5 equals 5 OR 4 equals 5 OR 4 equals 4.’;
+    echo 'Yes! $foo was false AND either 5 equals 5 OR 4 equals 5 OR 4 equals 4.';
 }
 ?>
 ```
@@ -274,39 +274,39 @@ It is very important to think about the logic of your conditions. If you have tw
 
 ### `elseif` ###
 
-Sometimes you may have multiple groups of conditions with different code to execute for each group. You could write a second `if` statement, but if the second condition group doesn’t matter as long as the first one is true, then an `elseif` is the way to go. An `elseif` follows an `if`, and is only evaluated if the preceding `if`s and `elseif`s have not proved true.
+Sometimes you may have multiple groups of conditions with different code to execute for each group. You could write a second `if` statement, but if the second condition group doesn't matter as long as the first one is true, then an `elseif` is the way to go. An `elseif` follows an `if`, and is only evaluated if the preceding `if`s and `elseif`s have not proved true.
 
 ``` {.php .numberLines}
 <?php
 $foo = true;
 if (!$foo){
-    echo ‘$foo was false!’;
+    echo '$foo was false!';
 } elseif ($foo){
-    echo ‘$foo was true!’;
+    echo '$foo was true!';
 }
 ?>
 ```
 
-An `elseif` is like an “otherwise if”. If this condition proves true, execute this code, otherwise if this other condition proves true, execute this other code. You can have as many `elseifs` as you’d like, but remember that as soon as one of them proves true the rest of them are no longer tested. Logical operators can also be used in `elseif` statements.
+An `elseif` is like an "otherwise if". If this condition proves true, execute this code, otherwise if this other condition proves true, execute this other code. You can have as many `elseifs` as you'd like, but remember that as soon as one of them proves true the rest of them are no longer tested. Logical operators can also be used in `elseif` statements.
 
 ### `else` ###
 
-In a situation where you want to execute different code if none of the conditions prove true, PHP gives us the `else` statement. The `else` statement is the last statement in the if “stack” and acts like a catchall. If none of the conditions prove true, the code within the `else` statement will execute, but if any of the conditions do prove true, the `else` statement is skipped.
+In a situation where you want to execute different code if none of the conditions prove true, PHP gives us the `else` statement. The `else` statement is the last statement in the if "stack" and acts like a catchall. If none of the conditions prove true, the code within the `else` statement will execute, but if any of the conditions do prove true, the `else` statement is skipped.
 
 ``` {.php .numberLines}
 <?php
 $foo = true;
 if (!$foo){
-    echo ‘$foo was false!’;
+    echo '$foo was false!';
 } elseif ($foo){
-    echo ‘$foo was true!’;
+    echo '$foo was true!';
 } else {
-    echo ‘$foo was neither true nor false!’;
+    echo '$foo was neither true nor false!';
 }
 ?>
 ```
 
-While `elseif` acts like “otherwise if”, `else` acts like just “otherwise”. If this condition proves true, execute this code, otherwise if this condition proves true, execute this other code, otherwise execute that.
+While `elseif` acts like "otherwise if", `else` acts like just "otherwise". If this condition proves true, execute this code, otherwise if this condition proves true, execute this other code, otherwise execute that.
 
 ## Conditional Challenge ##
 
@@ -314,7 +314,7 @@ Create a series of conditions using `if`, `elseif`, and `else`. For an extra cha
 
 ## User Defined Functions ##
 
-Let’s go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write `function` followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
+Let's go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write `function` followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
 
 ``` {.php .numberLines}
 <?php
@@ -324,27 +324,27 @@ function showText($text){
 ?>
 ```
 
-When we save and run this code, nothing happens. This is because we didn’t call the function. Functions do not execute unless they’re called by name. You can call user-defined functions the same way as built-in functions.
+When we save and run this code, nothing happens. This is because we didn't call the function. Functions do not execute unless they're called by name. You can call user-defined functions the same way as built-in functions.
 
 ``` {.php .numberLines}
 <?php
 function showText($text){
     echo $text;
 }
-showText(‘Hello World!’);
+showText('Hello World!');
 ?>
 ```
 
-That’s better. Now our function is declared and called. From a technical perspective, a function does not have to be defined before it is called (unless it is defined conditionally using an `if` statement) but it is good programming practice to define functions before they are called for easier readability.
+That's better. Now our function is declared and called. From a technical perspective, a function does not have to be defined before it is called (unless it is defined conditionally using an `if` statement) but it is good programming practice to define functions before they are called for easier readability.
 
-Let’s try something else. Let’s have the function return it to be output.
+Let's try something else. Let's have the function return it to be output.
 
 ``` {.php .numberLines}
 <?php
 function showText($text){
     return $text;
 }
-echo showText(‘Hello World!’);
+echo showText('Hello World!');
 ?>
 ```
 
@@ -360,7 +360,7 @@ Something very important to note is the scope of a variable. The scope of a vari
 
 ### Superglobal Variables ##
 
-In PHP there are a few variables that are referred to as “superglobal” variables. These variables are available in every script and from within every function. These variables are:
+In PHP there are a few variables that are referred to as "superglobal" variables. These variables are available in every script and from within every function. These variables are:
 
 * `$_GET` - Contains the HTTP GET variables passed to the script.
 * `$_POST` - Contains the HTTP POST variables passed to the script.
@@ -371,19 +371,19 @@ In PHP there are a few variables that are referred to as “superglobal” varia
 
 ## Arrays ##
 
-Arrays are a special data type that contains an index of data. An easy way to think about it is that arrays are a list of variables contained within a single variable. In PHP arrays can be indexed numerically or with a String. Arrays that have a String index are called associative arrays, but are also referred to as “hash tables” by some. A single array can have both numerical and String keys at the same time.
+Arrays are a special data type that contains an index of data. An easy way to think about it is that arrays are a list of variables contained within a single variable. In PHP arrays can be indexed numerically or with a String. Arrays that have a String index are called associative arrays, but are also referred to as "hash tables" by some. A single array can have both numerical and String keys at the same time.
 
 ``` {.php .numberLines}
 <?php
-$a = array(‘value1’, ‘value2’, ‘value3’); //Index starts at (int)0
+$a = array('value1', 'value2', 'value3'); //Index starts at (int)0
 echo $a[0];
-$a[0] = ‘new value1’; //Only sets index (int)0
-$a[‘0’] = ‘Different than (int)0’; //String key of ‘0’ is different than (int)0
-$b = array(‘key1’ => ‘value1’,
-           ‘key2’ => ‘value2’,
-           ‘key3’ => ‘value3’
+$a[0] = 'new value1'; //Only sets index (int)0
+$a['0'] = 'Different than (int)0'; //String key of '0' is different than (int)0
+$b = array('key1' => 'value1',
+           'key2' => 'value2',
+           'key3' => 'value3'
      );
-$b[] = ‘blank’; //Append to the array. Takes next available (int)key
+$b[] = 'blank'; //Append to the array. Takes next available (int)key
 print_r($a);
 print_r($b);
 ?>
@@ -391,7 +391,7 @@ print_r($b);
 
 Arrays are indexed with integers starting with `0` by default. If you set only String keys and then append to the array it will take the next available integer value, which would be `0`. If you set integer key `5` and then append it will take the next available integer key, which it will assume is `6`.
 
-Access the data within an array by referencing it’s key within square brackets after the array name. [Reiterate that superglobal variables are arrays and are accessed as such.]
+Access the data within an array by referencing it's key within square brackets after the array name. [Reiterate that superglobal variables are arrays and are accessed as such.]
 
 ### Array Challenge ###
 
@@ -409,7 +409,7 @@ The `while` loop is the most basic of loops. The `while` loops checks for a cond
 <?php
 $i = 0;
 while ($i <= 10){
-    echo $i . ‘<br>’;
+    echo $i . '<br>';
     $i++;
 }
 ?>
@@ -423,7 +423,7 @@ Do-while loops are basically the same thing as `while` loops. The exception bein
 <?php
 $i = 0;
 do {
-    echo $i . ‘<br>’;
+    echo $i . '<br>';
     $i++;
 } while ($i < 0);
 ?>
@@ -474,21 +474,21 @@ A `foreach` loop is specifically purposed to loop through array and object value
 
 ``` {.php .numberLines}
 <?php
-$i = array(‘value1’, ‘value 2’, ‘value3’);
+$i = array('value1', 'value 2', 'value3');
 foreach ($i as $value){
-    echo $value . ‘<br>’;
+    echo $value . '<br>';
 }
 ?>
 ```
 
-A `foreach` loop uses an array’s internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
+A `foreach` loop uses an array's internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
 
 ``` {.php .numberLines}
 <?php
-$i = array(‘value1’, ‘value 2’, ‘value3’);
+$i = array('value1', 'value 2', 'value3');
 print_r($i);
 foreach ($i as $key => $value){
-    $i[$key] = ‘newvalue’ . $key;
+    $i[$key] = 'newvalue' . $key;
 }
 print_r($i);
 ?>
@@ -500,7 +500,7 @@ Create a PHP file that accepts data from an instructor created form, validates i
 
 # MySQL #
 
-MySQL is the world’s most popular open-source database engine. You will encounter it on nearly every web host and it’s uses far exceed that of just website applications. MySQL can be used to stone information for any application. MySQL is its own application, completely separate from PHP. It offers a username/password authentication system to access databases, ensuring that they aren’t open to the world. It also allows certain users to be given specific permissions on a database; meaning that you can restrict what certain user accounts can do (i.e. only view data, or only add data).
+MySQL is the world's most popular open-source database engine. You will encounter it on nearly every web host and it's uses far exceed that of just website applications. MySQL can be used to stone information for any application. MySQL is its own application, completely separate from PHP. It offers a username/password authentication system to access databases, ensuring that they aren't open to the world. It also allows certain users to be given specific permissions on a database; meaning that you can restrict what certain user accounts can do (i.e. only view data, or only add data).
 
 ## Databases, Tables, Columns, and Rows ##
 
@@ -512,7 +512,7 @@ Where each column and row meet is called a cell. Each cell can have its own set 
 
 ## Query Types ##
 
-When you run a command on the SQL database it’s called a query. There are many different kinds of queries for creating new databases and tables, and much more, but for today we are going to focus on the ones that manipulate data within a database table that has already been created. The query syntax can become very complicated so it will be explained as simply as possible.
+When you run a command on the SQL database it's called a query. There are many different kinds of queries for creating new databases and tables, and much more, but for today we are going to focus on the ones that manipulate data within a database table that has already been created. The query syntax can become very complicated so it will be explained as simply as possible.
 
 ### Insert ###
 
@@ -552,19 +552,19 @@ DELETE FROM tbl_name WHERE column1 = 1;
 
 ## MySQLi Extension ##
 
-To connect to a MySQL database in PHP there are many tools and extensions available, but the most common one with the latest PHP version is MySQLi. MySQLi is a PHP extension that comes packaged with most builds of PHP. We haven’t talked about objects much, but we will be using this extension as an object; although it can also be used procedurally.
+To connect to a MySQL database in PHP there are many tools and extensions available, but the most common one with the latest PHP version is MySQLi. MySQLi is a PHP extension that comes packaged with most builds of PHP. We haven't talked about objects much, but we will be using this extension as an object; although it can also be used procedurally.
 
 ### Open Database Connection ###
 
-The first step is to connect to the database. Using the MySQLi extension we are going to accomplish this by creating a new MySQLi object. Think of an object in PHP as an actual object. Each object has a set of functions it’s designed to do.
+The first step is to connect to the database. Using the MySQLi extension we are going to accomplish this by creating a new MySQLi object. Think of an object in PHP as an actual object. Each object has a set of functions it's designed to do.
 
 ``` {.php .numberLines}
 <?php
-$db = new mysqli(‘localhost’, ‘username’, ‘password’, ‘database_name’);
+$db = new mysqli('localhost', 'username', 'password', 'database_name');
 ?>
 ```
 
-This code will create a new MySQLi object using the database server, username, password, and the actual database name. It’s important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use `localhost`, whereas if you use a remote MySQL server that is different from your web server, use that server’s IP address.
+This code will create a new MySQLi object using the database server, username, password, and the actual database name. It's important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use `localhost`, whereas if you use a remote MySQL server that is different from your web server, use that server's IP address.
 
 ### Execute Queries ###
 
@@ -572,8 +572,8 @@ Now that we have our object containing the functions of the MySQLi class, we can
 
 ``` {.php .numberLines}
 <?php
-$db = new mysqli(‘localhost’, ‘username’, ‘password’, ‘database_name’);
-$db->query(‘SQL COMMAND’);
+$db = new mysqli('localhost', 'username', 'password', 'database_name');
+$db->query('SQL COMMAND');
 ?>
 ```
 
@@ -583,17 +583,17 @@ A select query is unique because it is requesting data, and therefor needs to re
 
 ``` {.php .numberLines}
 <?php
-$db = new mysqli(‘localhost’, ‘username’, ‘password’, ‘database_name’);
-$res = $db->query(‘SELECT * FROM people WHERE id <= 5’);
+$db = new mysqli('localhost', 'username', 'password', 'database_name');
+$res = $db->query('SELECT * FROM people WHERE id <= 5');
 ?>
 ```
 
-The result variable becomes a result object, containing the reference and the functions to review and retrieve the data. For example, we can use the result to check the number of rows that were found, and as long as it’s more than 1, to fetch the data.
+The result variable becomes a result object, containing the reference and the functions to review and retrieve the data. For example, we can use the result to check the number of rows that were found, and as long as it's more than 1, to fetch the data.
 
 ``` {.php .numberLines}
 <?php
-$db = new mysqli(‘localhost’, ‘username’, ‘password’, ‘database_name’);
-$res = $db->query(“SELECT * FROM people WHERE id <= 5”);
+$db = new mysqli('localhost', 'username', 'password', 'database_name');
+$res = $db->query("SELECT * FROM people WHERE id <= 5");
 if ($res->num_rows > 1){
     while ($row = $res->fetch_array(MYSQL_NUM)){
         $people[] = $row;
@@ -604,7 +604,7 @@ if ($res->num_rows > 1){
 
 The `while` loop is the method of retrieving multiple rows from a return. Using the `while` loop in this way advances the internal counter of the result which keeps track of the query. Each time the `while` loop advances the internal counter does as well, making it stop once there are no longer any rows to use. This example uses the `fetch_array()` function which returns the current row as an array. You can either have it use a numerical index or an associative index. The associative index uses the column names as the key values when the array is returned.
 
-This is done using the two constants `MYSQL_NUM` and `MYSQL_ASSOC`. Constants are like variables but aren’t referenced the same way, and aren’t designed to have their values changed.
+This is done using the two constants `MYSQL_NUM` and `MYSQL_ASSOC`. Constants are like variables but aren't referenced the same way, and aren't designed to have their values changed.
 
 A select query will return a `false` value if it was not successfully executed.
 
