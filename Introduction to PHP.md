@@ -95,6 +95,26 @@ It would have output the exact text, instead of executing the echo instruction. 
 
 To add comments to your PHP files you can use one of three methods. You can comment out an entire line by placing a `#` as the first character in the line, you can comment out a line by placing `//` anywhere in the line, or you can comment out multiple lines by placing `/*` at the beginning of the comment and `*/` at the end of the comment.
 
+``` {.php .numberLines}
+<?php
+
+echo 'Hello, World!'; // This line will execute...
+
+// ...but this next one will not (it's commented out)...
+// echo 'Hey, World! Over here!';
+
+# ...and neither will this one.
+# echo 'Am I inside a comment?';
+
+/*
+echo 'None of these lines will execute, because they are in a block comment.';
+echo 'World, you look very lovely this evening.';
+echo 'Can you hear me, World?';
+*/
+
+?>
+```
+
 ## Functions, Parameters, and Return Values ##
 
 A major part of any programming language is functions. You'll also hear them referred to as methods. A function is a collection of instructions that preform a specific action. Basically, functions perform a specific function.
