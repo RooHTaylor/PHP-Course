@@ -75,7 +75,7 @@ echo ‘Hello World!’;
 
 The semi-colon at the end of the line is very important. The semi-colon is placed at the end of every instruction to let the code-engine know that the instruction is complete that that a new instruction will be next.
 
-Save the file with the extension .php and upload it to your web space. When you name PHP files you should keep it simple and short. DO NOT use spaces or special characters other than dash and underscore in your file names. It is very poor programming practice to have long complicated names or special characters.
+Save the file with the extension `.php` and upload it to your web space. When you name PHP files you should keep it simple and short. DO NOT use spaces or special characters other than dash and underscore in your file names. It is very poor programming practice to have long complicated names or special characters.
 
 Now view the file in a web browser. Congratulations! You’ve all successfully programmed in PHP.
 
@@ -93,7 +93,7 @@ It would have output the exact text, instead of executing the echo instruction. 
 
 ## Comments ##
 
-To add comments to your PHP files you can use one of three methods. You can comment out an entire line by placing a # as the first character in the line, you can comment out a line by placing // anywhere in the line, or you can comment out multiple lines by placing `/*` at the beginning of the comment and */ at the end of the comment.
+To add comments to your PHP files you can use one of three methods. You can comment out an entire line by placing a `#` as the first character in the line, you can comment out a line by placing `//` anywhere in the line, or you can comment out multiple lines by placing `/*` at the beginning of the comment and `*/` at the end of the comment.
 
 ## Functions, Parameters, and Return Values ##
 
@@ -130,7 +130,7 @@ As previously mentioned, a lot of the history of PHP is also on the website. If 
 
 ### Operators ###
 
-Let’s look at a bit of math; after all PHP is a programming language. Basic arithmetic is accomplished with the usual symbols + - * and / . These are known as operators. Let’s try them.
+Let’s look at a bit of math; after all PHP is a programming language. Basic arithmetic is accomplished with the usual symbols `+`, `-`, `*` and `/` . These are known as operators. Let’s try them.
 
 ``` {.php .numberLines}
 <?php
@@ -191,15 +191,15 @@ You’ve already heard me talk a little about integers and Strings, and it’s t
 
 ### Integers ###
 
-An integer is a whole number. -3, -2, -1, 1, 2, 3, 4, 5 … are examples of integers. An integer is typed literally and does not need quotes around it.
+An integer is a whole number. `-3`, `-2`, `-1`, `1`, `2`, `3`, `4`, `5` … are examples of integers. An integer is typed literally and does not need quotes around it.
 
 ### Strings ###
 
-A String is text. A string is defined with quotations. String that are defined with double quotes will expand variables and special characters like newlines (\\n).
+A String is text. A string is defined with quotations. String that are defined with double quotes will expand variables and special characters like newlines (`\\n`).
 
 ### Booleans ###
 
-Booleans are the simplest data type. Booleans are true or false, and defined using those constants.
+Booleans are the simplest data type. Booleans are `true` or `false`, and defined using those constants.
 
 ### Floating Point Numbers ###
 
@@ -234,9 +234,9 @@ combining Strings with integers]
 
 ## Conditional Statements ##
 
-### If ###
+### `if` ###
 
-A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an ‘if’ statement. An if statement is best described as “IF a specific condition proves true, execute this code”.
+A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an `if` statement. An `if` statement is best described as “IF a specific condition proves true, execute this code”.
 
 ``` {.php .numberLines}
 <?php
@@ -259,7 +259,7 @@ if (!$foo){
 
 In this example, the condition is that the variable `$foo` must be false. However, if `$foo` is false, the condition still proves true because it is true that `$foo` is false.
 
-With if statements you can also have multiple conditions using the AND/OR operators.
+With `if` statements you can also have multiple conditions using the AND/OR operators.
 
 ``` {.php .numberLines}
 <?php
@@ -272,9 +272,9 @@ if (!$foo && 5 == 5 || 4 == 4){
 
 It is very important to think about the logic of your conditions. If you have two conditions and use the AND operator, BOTH conditions must prove true. If you use the OR operator, AT LEAST one or both conditions must prove true. In this example, `$foo` must be false AND EITHER 5 must equal 5 OR 4 must equal 4.
 
-### Elseif ###
+### `elseif` ###
 
-Sometimes you may have multiple groups of conditions with different code to execute for each group. You could write a second if statement, but if the second condition group doesn’t matter as long as the first one is true, then an elseif is the way to go. An elseif follows an if, and is only evaluated if the preceding ifs and elseifs have not proved true.
+Sometimes you may have multiple groups of conditions with different code to execute for each group. You could write a second `if` statement, but if the second condition group doesn’t matter as long as the first one is true, then an `elseif` is the way to go. An `elseif` follows an `if`, and is only evaluated if the preceding `if`s and `elseif`s have not proved true.
 
 ``` {.php .numberLines}
 <?php
@@ -287,11 +287,11 @@ if (!$foo){
 ?>
 ```
 
-An elseif is like an “otherwise if”. If this condition proves true, execute this code, otherwise if this other condition proves true, execute this other code. You can have as many elseifs as you’d like, but remember that as soon as one of them proves true the rest of them are no longer tested. Logical operators can also be used in elseif statements.
+An `elseif` is like an “otherwise if”. If this condition proves true, execute this code, otherwise if this other condition proves true, execute this other code. You can have as many `elseifs` as you’d like, but remember that as soon as one of them proves true the rest of them are no longer tested. Logical operators can also be used in `elseif` statements.
 
-### Else ###
+### `else` ###
 
-In a situation where you want to execute different code if none of the conditions prove true, PHP gives us the else statement. The else statement is the last statement in the if “stack” and acts like a catchall. If none of the conditions prove true, the code within the else statement will execute, but if any of the conditions do prove true, the else statement is skipped.
+In a situation where you want to execute different code if none of the conditions prove true, PHP gives us the `else` statement. The `else` statement is the last statement in the if “stack” and acts like a catchall. If none of the conditions prove true, the code within the `else` statement will execute, but if any of the conditions do prove true, the `else` statement is skipped.
 
 ``` {.php .numberLines}
 <?php
@@ -306,15 +306,15 @@ if (!$foo){
 ?>
 ```
 
-While elseif acts like “otherwise if”, else acts like just “otherwise”. If this condition proves true, execute this code, otherwise if this condition proves true, execute this other code, otherwise execute that.
+While `elseif` acts like “otherwise if”, `else` acts like just “otherwise”. If this condition proves true, execute this code, otherwise if this condition proves true, execute this other code, otherwise execute that.
 
 ## Conditional Challenge ##
 
-Create a series of conditions using if, elseif, and else. For an extra challenge include variables. For a real challenge, try to validate data (i.e. confirm that a variable meets specific data requirements like being a number).
+Create a series of conditions using `if`, `elseif`, and `else`. For an extra challenge include variables. For a real challenge, try to validate data (i.e. confirm that a variable meets specific data requirements like being a number).
 
 ## User Defined Functions ##
 
-Let’s go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write ‘function’ followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
+Let’s go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write `function` followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
 
 ``` {.php .numberLines}
 <?php
@@ -335,7 +335,7 @@ showText(‘Hello World!’);
 ?>
 ```
 
-That’s better. Now our function is declared and called. From a technical perspective, a function does not have to be defined before it is called (unless it is defined conditionally using an ‘if’ statement) but it is good programming practice to define functions before they are called for easier readability.
+That’s better. Now our function is declared and called. From a technical perspective, a function does not have to be defined before it is called (unless it is defined conditionally using an `if` statement) but it is good programming practice to define functions before they are called for easier readability.
 
 Let’s try something else. Let’s have the function return it to be output.
 
@@ -356,7 +356,7 @@ Create a function that is passed information, does something with it, and return
 
 ## Variable Scope ##
 
-Something very important to note is the scope of a variable. The scope of a variable is basically where it can be accessed from. Most variables can only be accessed from within their script and any script that is included in that script, which is to say they only have a single scope. Function parameters are only accessible from within their functions and variables defined outside a function are not available inside (unless passed through a parameter). Using the global keyword within a function will allow direct access to variables outside the function.
+Something very important to note is the scope of a variable. The scope of a variable is basically where it can be accessed from. Most variables can only be accessed from within their script and any script that is included in that script, which is to say they only have a single scope. Function parameters are only accessible from within their functions and variables defined outside a function are not available inside (unless passed through a parameter). Using the `global` keyword within a function will allow direct access to variables outside the function.
 
 ### Superglobal Variables ##
 
@@ -367,7 +367,7 @@ In PHP there are a few variables that are referred to as “superglobal” varia
 * `$_COOKIE` - Contains the HTTP COOKIE variables passed to the script.
 * `$_SERVER` - Contains information about the script, server, and client.
 * `$_SESSION` - This is the PHP session variable that is generated when you run the `session_start()` function. The values of this variable are stored in the /tmp directory on the server and are set manually at first, but are loaded automatically afterwards, until the session is expired.
-* `$GLOBALS` - This is the alternative to the globals keyword. This super global contains every variable that is currently defined.
+* `$GLOBALS` - This is the alternative to the `globals` keyword. This super global contains every variable that is currently defined.
 
 ## Arrays ##
 
@@ -389,7 +389,7 @@ print_r($b);
 ?>
 ```
 
-Arrays are indexed with integers starting with 0 by default. If you set only String keys and then append to the array it will take the next available integer value, which would be 0. If you set integer key 5 and then append it will take the next available integer key, which it will assume is 6.
+Arrays are indexed with integers starting with `0` by default. If you set only String keys and then append to the array it will take the next available integer value, which would be `0`. If you set integer key `5` and then append it will take the next available integer key, which it will assume is `6`.
 
 Access the data within an array by referencing it’s key within square brackets after the array name. [Reiterate that superglobal variables are arrays and are accessed as such.]
 
@@ -401,9 +401,9 @@ Create two arrays using different methods. For an extra challenge, find function
 
 Often times there is a requirement to repeat a certain section of code a number of times before carrying on. Rather than typing out that same section of code over and over again, we can use loops to do it for us.
 
-### While ###
+### `while` ###
 
-The while loop is the most basic of loops. The while loops checks for a condition, and as long as the condition proves true it will continue to execute the code within its braces. The condition check happens at the start of each loop iteration, which means the while loop will only execute if the condition proves true at the beginning. It also means that if the condition changes from true to false in the middle of an iteration, the code will continue to execute until the end of that iteration.
+The `while` loop is the most basic of loops. The `while` loops checks for a condition, and as long as the condition proves true it will continue to execute the code within its braces. The condition check happens at the start of each loop iteration, which means the while loop will only execute if the condition proves true at the beginning. It also means that if the condition changes from true to false in the middle of an iteration, the code will continue to execute until the end of that iteration.
 
 ``` {.php .numberLines}
 <?php
@@ -417,7 +417,7 @@ while ($i <= 10){
 
 ### Do-while ###
 
-Do-while loops are basically the same thing as while loops. The exception being that a do-while checks the condition at the end of a loop iteration. This means that the code within the braces is executed once before the condition is checked.
+Do-while loops are basically the same thing as `while` loops. The exception being that a do-while checks the condition at the end of a loop iteration. This means that the code within the braces is executed once before the condition is checked.
 
 ``` {.php .numberLines}
 <?php
@@ -431,13 +431,13 @@ do {
 
 This code will only execute once. Once the condition is checked it will prove false and not execute again. Do-while loops also support the conditional break statement. The break statement will end execution of the loop code and proceed with the rest of the script.
 
-### For ###
+### `for` ###
 
-For loops are one of the most complex loop types. For loops evaluate/execute three expressions as they run, and can be used any number of ways.
+`for` loops are one of the most complex loop types. `for` loops evaluate/execute three expressions as they run, and can be used any number of ways.
 
 The first expression is evaluated/executed once at the beginning of the for loop. The second expression is evaluated at the beginning of each loop iteration. If it evaluates to true, the loop continues; otherwise the loop ends. The third expression is evaluated/executed at the end of each loop iteration. Each of the expression groups can have multiple expressions separated by a comma, or they can be left empty. If the second expression is left empty it defaults to true and the loop will run indefinitely.
 
-For loops also support the break statement, to end execution at any point during the iteration.
+`for` loops also support the `break` statement, to end execution at any point during the iteration.
 
 ``` {.php .numberLines}
 <?php
@@ -468,9 +468,9 @@ for ($i = 1, $j = 0; $i <= 10; $j += $i, print $i, $i++);
 
 Each of these examples will output the numbers 1 through 10.
 
-### Foreach ###
+### `foreach` ###
 
-A foreach loop is specifically purposed to loop through array and object values. An error will be generated if you try to run a foreach loop that references a non-array or object. It steps through each value of an array, and executes the code in its braces. The two syntaxes provide you with access to both the array key and the value, depending on which you use.
+A `foreach` loop is specifically purposed to loop through array and object values. An error will be generated if you try to run a `foreach` loop that references a non-array or object. It steps through each value of an array, and executes the code in its braces. The two syntaxes provide you with access to both the array key and the value, depending on which you use.
 
 ``` {.php .numberLines}
 <?php
@@ -481,7 +481,7 @@ foreach ($i as $value){
 ?>
 ```
 
-A foreach loop uses an array’s internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
+A `foreach` loop uses an array’s internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
 
 ``` {.php .numberLines}
 <?php
@@ -503,6 +503,7 @@ Create a PHP file that accepts data from an instructor created form, validates i
 MySQL is the world’s most popular open-source database engine. You will encounter it on nearly every web host and it’s uses far exceed that of just website applications. MySQL can be used to stone information for any application. MySQL is its own application, completely separate from PHP. It offers a username/password authentication system to access databases, ensuring that they aren’t open to the world. It also allows certain users to be given specific permissions on a database; meaning that you can restrict what certain user accounts can do (i.e. only view data, or only add data).
 
 ## Databases, Tables, Columns, and Rows ##
+
 A database is a really simple concept. Think of it like a collection of information organized into tables. Each table is divided into columns and rows, and each row is a data entry.
 
 [Use phpMyAdmin to provide a more visual demonstration of structure.]
@@ -563,11 +564,11 @@ $db = new mysqli(‘localhost’, ‘username’, ‘password’, ‘database_na
 ?>
 ```
 
-This code will create a new MySQLi object using the database server, username, password, and the actual database name. It’s important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use localhost, whereas if you use a remote MySQL server that is different from your web server, use that server’s IP address.
+This code will create a new MySQLi object using the database server, username, password, and the actual database name. It’s important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use `localhost`, whereas if you use a remote MySQL server that is different from your web server, use that server’s IP address.
 
 ### Execute Queries ###
 
-Now that we have our object containing the functions of the MySQLi class, we can start running queries on the database. Executing a query is as simple as calling the query function.
+Now that we have our object containing the functions of the MySQLi class, we can start running queries on the database. Executing a query is as simple as calling the `query` function.
 
 ``` {.php .numberLines}
 <?php
@@ -601,15 +602,15 @@ if ($res->num_rows > 1){
 ?>
 ```
 
-The while loop is the method of retrieving multiple rows from a return. Using the while loop in this way advances the internal counter of the result which keeps track of the query. Each time the while loop advances the internal counter does as well, making it stop once there are no longer any rows to use. This example uses the `fetch_array()` function which returns the current row as an array. You can either have it use a numerical index or an associative index. The associative index uses the column names as the key values when the array is returned.
+The `while` loop is the method of retrieving multiple rows from a return. Using the `while` loop in this way advances the internal counter of the result which keeps track of the query. Each time the `while` loop advances the internal counter does as well, making it stop once there are no longer any rows to use. This example uses the `fetch_array()` function which returns the current row as an array. You can either have it use a numerical index or an associative index. The associative index uses the column names as the key values when the array is returned.
 
-This is done using the two constants MYSQL_NUM and MYSQL_ASSOC. Constants are like variables but aren’t referenced the same way, and aren’t designed to have their values changed.
+This is done using the two constants `MYSQL_NUM` and `MYSQL_ASSOC`. Constants are like variables but aren’t referenced the same way, and aren’t designed to have their values changed.
 
-A select query will return a false value if it was not successfully executed.
+A select query will return a `false` value if it was not successfully executed.
 
 ### Insert, Update, and Delete ###
 
-For insert, update, and delete queries, there is no data to return and thus the query needs only to be executed. The query function will return a true value as long as the query was successful, or a false if they were not.
+For insert, update, and delete queries, there is no data to return and thus the query needs only to be executed. The query function will return a `true` value as long as the query was successful, or a `false` if they were not.
 
 ### Final Challenge (part 2) ###
 
