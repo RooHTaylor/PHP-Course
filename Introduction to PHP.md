@@ -93,7 +93,16 @@ It would have output the exact text, instead of executing the echo instruction. 
 
 ## Comments ##
 
-To add comments to your PHP files you can use one of three methods. You can comment out an entire line by placing a `#` as the first character in the line, you can comment out a line by placing `//` anywhere in the line, or you can comment out multiple lines by placing `/*` at the beginning of the comment and `*/` at the end of the comment.
+PHP support *comments*. Comments are often used to communicate with other programmers, or with yourself at some later time. PHP does not process comments as code, and it does not pass them through to the web browser. Comments are only visible when you are looking at source code.
+
+Learning to use comments effectively is an important skill for any programmer.
+
+**Tip:** Because code inside comments gets ignored, comments can also be used to temporarily disable programming statements.
+
+PHP supports two types of comments using three different syntaxes:
+
+1. You can *comment out* a single line (or part of a single line) using `#` or `//`, and
+1. you can comment out multiple lines together by placing `/*` at the beginning of the comment and `*/` at the end of the comment.
 
 ``` {.php .numberLines}
 <?php
