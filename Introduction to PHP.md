@@ -1,7 +1,8 @@
-# Introduction to PHP and MySQL #
+% Introduction to PHP and MySQL
+% Andrew Taylor
+% October 24, 2013
 
-Developed by Andrew Taylor
-10/24/2013
+![](images/hackademy.png)
 
 ## License ##
 
