@@ -283,7 +283,7 @@ combining Strings with integers]
 
 ### `if` ###
 
-A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an `if` statement. An `if` statement is best described as "IF a specific condition proves true, execute this code".
+A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an `if` statement. An `if` statement is best described as "if a specific condition proves true, execute this code".
 
 ``` {.php .numberLines}
 <?php
@@ -293,18 +293,19 @@ if (5 == 5){
 ?>
 ```
 
-In this example, the condition is that 5 must equal 5. And of course the answer is yes, or true. And when the condition evaluates as true, the code within the braces is executed. It is worthy to note that conditional statements always require a true condition to execute, even if the condition is that something must prove false. For example:
+In this example, the condition is that 5 must equal 5. And of course the answer is yes, or `true`. And when the condition evaluates as `true`, the code within the braces is executed.
+
+If you need to execute a branch of code when something is `false`, you can use use '`!`', the *not operator*. For example:
 
 ``` {.php .numberLines}
 <?php
 $foo = false;
+// Read this as "if not $foo"
 if (!$foo){
     echo 'Yes! $foo was false.';
 }
 ?>
 ```
-
-In this example, the condition is that the variable `$foo` must be false. However, if `$foo` is false, the condition still proves true because it is true that `$foo` is false.
 
 With `if` statements you can also have multiple conditions using the AND/OR operators.
 
