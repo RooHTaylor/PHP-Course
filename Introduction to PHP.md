@@ -194,7 +194,17 @@ $variablename = 'value';
 ?>
 ```
 
-Variables are referenced with a dollar sign and the variable name. Variable names follow the same scheme as other labels in PHP (alphanumeric and underscores). Think of variables like placeholders. Let's try.
+What makes a good variable name? Well, let's see what PHP.net has to say about that:
+
+> Variables in PHP are represented by a dollar sign followed by the name of the variable. The variable name is case-sensitive.
+> 
+> Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.
+
+So, `$myVariable` is a valid variable name. So is `$_your_variable`. `$123` is not valid, because labels cannot start with a number. `$_123` is valid, but is not very descriptive. Good variable names are descriptive.
+
+The variable `$myVariable` is different from the variable `$MYVARIABLE`.
+
+Let's try out some variables!
 
 ``` {.php .numberLines}
 <?php
@@ -364,7 +374,9 @@ Create a series of conditions using `if`, `elseif`, and `else`. For an extra cha
 
 ## User Defined Functions ##
 
-Let's go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write `function` followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
+Let's go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write `function` followed by the function name. Function names follow the same rules as other labels in PHP, just like [variables do](#variables).
+
+Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
 
 ``` {.php .numberLines}
 <?php
