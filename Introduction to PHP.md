@@ -583,7 +583,7 @@ When you run a command on the SQL database it's called a query. There are many d
 
 ### Insert ###
 
-Self-explanatory really. An insert query is used to insert data into a table. You can use it to insert one or multiple rows at one time. The syntax for a basic insert query is [type]:
+An *insert query* is used to insert data into a table. You can use it to insert one or multiple rows at one time. The syntax for a basic insert query is:
 
 ``` {.sql}
 INSERT INTO tbl_name (column1, column2, column3) VALUES (1, 2, 3), (4, 5, 6), (7, 8, 9);
