@@ -565,7 +565,9 @@ Create a PHP file that accepts data from an instructor created form, validates i
 
 # MySQL #
 
-MySQL is the world's most popular open-source database engine. You will encounter it on nearly every web host and it's uses far exceed that of just website applications. MySQL can be used to stone information for any application. MySQL is its own application, completely separate from PHP. It offers a username/password authentication system to access databases, ensuring that they aren't open to the world. It also allows certain users to be given specific permissions on a database; meaning that you can restrict what certain user accounts can do (i.e. only view data, or only add data).
+MySQL, usually pronounced *my ess cue ell* or *my sequel*, is the world's most popular open-source database engine. You will encounter it on nearly every web host and its uses far exceed that of just website applications. MySQL can be used to store information for any application.
+
+MySQL is its own application, completely separate from PHP. It offers a username/password authentication system to access databases, ensuring that they aren't open to the world. It also allows certain users to be given specific permissions on a database; meaning that you can restrict what certain user accounts can do (e.g. only view data, or only add data).
 
 ## Databases, Tables, Columns, and Rows ##
 
