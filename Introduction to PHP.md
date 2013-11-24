@@ -581,6 +581,8 @@ Where each column and row meet is called a cell. Each cell can have its own set 
 
 When you run a command on the SQL database it's called a query. There are many different kinds of queries for creating new databases and tables, and much more, but for today we are going to focus on the ones that manipulate data within a database table that has already been created. The query syntax can become very complicated so it will be explained as simply as possible.
 
+Queries often read a little bit like natural language, but they must be written using specific formats.
+
 ### Insert ###
 
 An *insert query* is used to insert data into a table. You can use it to insert one or multiple rows at one time. The syntax for a basic insert query is:
@@ -593,13 +595,13 @@ Note that the proper syntax for SQL queries has a semi-colon at the end of each 
 
 ### Select ###
 
-This is the most commonly used SQL query. A select query searches the table for a specific set of conditions and selects only those rows that match to return. The syntax for a basic select query is [type]:
+This is the most commonly used SQL query. A *select query* searches the table for a specific set of conditions and selects only those rows that match to return. The syntax for a basic select query is:
 
 ``` {.sql}
 SELECT column1, column2 FROM tbl_name WHERE column1 = 1;
 ```
 
-Note the paralanguage structure of the query.
+Note that in SQL we use a single `=` to compare two things, whereas in PHP we had to use two or three.
 
 ### Update ###
 
