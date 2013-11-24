@@ -399,7 +399,7 @@ showText('Hello World!');
 
 That's better. Now our function is declared and called. From a technical perspective, a function does not have to be defined before it is called (unless it is defined conditionally using an `if` statement) but it is good programming practice to define functions before they are called for easier readability.
 
-Let's try something else. Let's have the function return it to be output.
+Let's try something else. Let's have the function *return* its value instead of printing it.
 
 ``` {.php .numberLines}
 <?php
