@@ -307,18 +307,20 @@ if (!$foo){
 ?>
 ```
 
-With `if` statements you can also have multiple conditions using the AND/OR operators.
+With `if` statements you can also link multiple conditions together using the *logical and* (`&&`) and *logical or* (`||`) operators.
 
 ``` {.php .numberLines}
 <?php
 $foo = false;
-if (!$foo && 5 == 5 || 4 == 4){
-    echo 'Yes! $foo was false AND either 5 equals 5 OR 4 equals 5 OR 4 equals 4.';
+if (!$foo && (5 == 5 || 4 == 4)){
+    echo 'Yes! $foo was false AND either 5 equals 5 OR 4 equals 4.';
 }
 ?>
 ```
 
-It is very important to think about the logic of your conditions. If you have two conditions and use the AND operator, BOTH conditions must prove true. If you use the OR operator, AT LEAST one or both conditions must prove true. In this example, `$foo` must be false AND EITHER 5 must equal 5 OR 4 must equal 4.
+It is very important to think about the logic of your conditions. If you have two conditions and use `&&`, both conditions must prove `true`. If you use `||`, one or both conditions must prove `true`. Like in math, you can use parentheses to show which comparison must be performed first.
+
+In this example, `$foo` must be false and either `5` must equal `5` or `4` must equal `4`.
 
 ### `elseif` ###
 
