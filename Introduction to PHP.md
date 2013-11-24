@@ -418,7 +418,9 @@ Create a function that is passed information, does something with it, and return
 
 ## Variable Scope ##
 
-Something very important to note is the scope of a variable. The scope of a variable is basically where it can be accessed from. Most variables can only be accessed from within their script and any script that is included in that script, which is to say they only have a single scope. Function parameters are only accessible from within their functions and variables defined outside a function are not available inside (unless passed through a parameter). Using the `global` keyword within a function will allow direct access to variables outside the function.
+Something very important to note is the scope of a variable. The scope of a variable is basically where it can be accessed from. Most variables can only be accessed from within their script and any script that is included in that script, which is to say they only have a single scope. Function parameters are only accessible from within their functions and variables defined outside a function are not available inside (unless passed through a parameter).
+
+Using the `global` keyword within a function will allow direct access to variables outside the function, but this is something that should generally be avoided.
 
 ### Superglobal Variables ##
 
