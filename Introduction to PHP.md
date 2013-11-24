@@ -224,7 +224,25 @@ An integer is a whole number. `-3`, `-2`, `-1`, `1`, `2`, `3`, `4`, `5` … are 
 
 ### Strings ###
 
-A String is text. A string is defined with quotations. String that are defined with double quotes will expand variables and special characters like newlines (`\\n`).
+A string is text. Strings are defined with quotation marks.
+
+Strings that are defined with double quotes (instead of the single quotes that we have been using so far) will *expand* variables and special characters like newlines (`\n`).
+
+``` {.php .numberLines}
+<?php
+
+$x = 10;
+
+// Thanks to variable expansion, these both print
+//     I am thinking of the number 10.
+echo 'I am thinking of the number ' . $x . '.';
+echo "I am thinking of the number $x.";
+
+// Single-quoted strings do not expand variables. This prints
+//     I am thinking of the number $x.
+echo 'I am thinking of the number $x.';
+?>
+```
 
 ### Booleans ###
 
