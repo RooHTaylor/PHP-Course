@@ -194,7 +194,7 @@ $variablename = 'value';
 ?>
 ```
 
-Variables are declared with a dollar sign and the variable name. Variable names follow the same scheme as other labels in PHP (alphanumeric and underscores). Think of variables like placeholders. Let's try.
+Variables are referenced with a dollar sign and the variable name. Variable names follow the same scheme as other labels in PHP (alphanumeric and underscores). Think of variables like placeholders. Let's try.
 
 ``` {.php .numberLines}
 <?php
