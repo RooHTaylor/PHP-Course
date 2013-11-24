@@ -472,6 +472,7 @@ The `while` loop is the most basic of loops. The `while` loops checks for a cond
 ``` {.php .numberLines}
 <?php
 $i = 0;
+// <= means "less than or equal to"
 while ($i <= 10){
     echo $i . '<br>';
     $i++;
