@@ -653,7 +653,11 @@ $db = new mysqli('localhost', 'username', 'password', 'database_name');
 ?>
 ```
 
-This code will create a new MySQLi object using the database server, username, password, and the actual database name. It's important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use `localhost`, whereas if you use a remote MySQL server that is different from your web server, use that server's IP address.
+This code will create a new MySQLi object using the database server, username, password, and the actual database name. It's important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use `localhost`, whereas if you use a remote MySQL server that is different from your web server, use that server's domain name or IP address.
+
+#### A note on `localhost` ####
+
+What's this `localhost` thing? It's a special computer name that represents the machine where the code is running. That's why you should use it if your PHP code and your MySQL database are running on the same machine.
 
 ### Execute Queries ###
 
