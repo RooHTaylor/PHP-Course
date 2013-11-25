@@ -305,6 +305,26 @@ if (5 == 5){
 
 In this example, the condition is that 5 must equal 5. And of course the answer is yes, or `true`. And when the condition evaluates as `true`, the code within the braces is executed.
 
+Notice that we have to use *two equals signs* (`==`) when we are checking whether two things are equal. Why? Well, we already use a single equals sign to *assign* a value to a variable.
+
+``` {.php .numberLines}
+<?php
+
+$x = '5'; // Assign the value '5' (a string) to the variable $x
+
+$x == 5; // Return true if the value stored in $x equals 5,
+         // allowing PHP to type juggle, and false otherwise.
+         //
+         // In this case, this should return true.
+
+$x === 5; // Return true if the value stored in $x equals 5,
+          // without allowing any type juggling.
+          //
+          // In this case, we get false because $x is a string
+          // and 5 is an integer.
+?>
+```
+
 If you need to execute a branch of code when something is `false`, you can use use '`!`', the *not operator*. For example:
 
 ``` {.php .numberLines}
