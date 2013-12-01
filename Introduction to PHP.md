@@ -93,7 +93,36 @@ It would have output the exact text, instead of executing the echo instruction. 
 
 ## Comments ##
 
-To add comments to your PHP files you can use one of three methods. You can comment out an entire line by placing a `#` as the first character in the line, you can comment out a line by placing `//` anywhere in the line, or you can comment out multiple lines by placing `/*` at the beginning of the comment and `*/` at the end of the comment.
+PHP support *comments*. Comments are often used to communicate with other programmers, or with yourself at some later time. PHP does not process comments as code, and it does not pass them through to the web browser. Comments are only visible when you are looking at source code.
+
+Learning to use comments effectively is an important skill for any programmer.
+
+**Tip:** Because code inside comments gets ignored, comments can also be used to temporarily disable programming statements.
+
+PHP supports two types of comments using three different syntaxes:
+
+1. You can *comment out* a single line (or part of a single line) using `#` or `//`, and
+1. you can comment out multiple lines together by placing `/*` at the beginning of the comment and `*/` at the end of the comment.
+
+``` {.php .numberLines}
+<?php
+
+echo 'Hello, World!'; // This line will execute...
+
+// ...but this next one will not (it's commented out)...
+// echo 'Hey, World! Over here!';
+
+# ...and neither will this one.
+# echo 'Am I inside a comment?';
+
+/*
+echo 'None of these lines will execute, because they are in a block comment.';
+echo 'World, you look very lovely this evening.';
+echo 'Can you hear me, World?';
+*/
+
+?>
+```
 
 ## Functions, Parameters, and Return Values ##
 
@@ -109,11 +138,11 @@ echo strtolower('Hello World!');
 ?>
 ```
 
-The function `strtolower()` accepts one parameter, which is the string that you want to convert to lowercase. A parameter is a piece of information that gets passed to a function, and is placed inside the parenthesis (with multiple parameters separated by commas). In this case, the parameter was "Hello World!" which was passed to the function, manipulated, and then returned. Generally speaking, all functions will return a value of some kind, even if a return value is not specifically declared. The return value of this function is passed directly to the echo construct and thus is printed.
+The function `strtolower()` accepts one parameter, which is the string that you want to convert to lowercase. A parameter is a piece of information that gets passed to a function, and is placed inside the parentheses (with multiple parameters separated by commas). In this case, the parameter was "Hello World!" which was passed to the function, manipulated, and then returned. Generally speaking, all functions will return a value of some kind, even if a return value is not specifically declared. The return value of this function is passed directly to the echo construct and thus is printed.
 
 ## PHP.net ##
 
-It is inevitable that you will forget the specific order or set of required parameters for functions, and there are several resources that can assist you. Some software will have tool-tips that pop up when it recognizes the function and tell you what parameters are needed, but it is unwise to rely on those. When in doubt a Google search will most likely get the results, but the best resource you have is PHP.net.
+It is inevitable that you will forget the specific order or set of required parameters for functions, and there are several resources that can assist you. Some software will have tool-tips that pop up when it recognizes the function and tell you what parameters are needed, but it is unwise to rely on those. When in doubt a Google search will most likely get the results, but the best resource you have is [PHP.net](http://php.net/), PHP's official website.
 
 This website contains the documentation for PHP along with tons of user-contributed content to help you. Let's go there and look up `strtolower()`.
 
@@ -165,7 +194,17 @@ $variablename = 'value';
 ?>
 ```
 
-Variables are declared with a dollar sign and the variable name. Variable names follow the same scheme as other labels in PHP (alphanumeric and underscores). Think of variables like placeholders. Let's try.
+What makes a good variable name? Well, let's see what PHP.net has to say about that:
+
+> Variables in PHP are represented by a dollar sign followed by the name of the variable. The variable name is case-sensitive.
+> 
+> Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.
+
+So, `$myVariable` is a valid variable name. So is `$_your_variable`. `$123` is not valid, because labels cannot start with a number. `$_123` is valid, but is not very descriptive. Good variable names are descriptive.
+
+The variable `$myVariable` is different from the variable `$MYVARIABLE`.
+
+Let's try out some variables!
 
 ``` {.php .numberLines}
 <?php
@@ -195,7 +234,25 @@ An integer is a whole number. `-3`, `-2`, `-1`, `1`, `2`, `3`, `4`, `5` … are 
 
 ### Strings ###
 
-A String is text. A string is defined with quotations. String that are defined with double quotes will expand variables and special characters like newlines (`\\n`).
+A string is text. Strings are defined with quotation marks.
+
+Strings that are defined with double quotes (instead of the single quotes that we have been using so far) will *expand* variables and special characters like newlines (`\n`).
+
+``` {.php .numberLines}
+<?php
+
+$x = 10;
+
+// Thanks to variable expansion, these both print
+//     I am thinking of the number 10.
+echo 'I am thinking of the number ' . $x . '.';
+echo "I am thinking of the number $x.";
+
+// Single-quoted strings do not expand variables. This prints
+//     I am thinking of the number $x.
+echo 'I am thinking of the number $x.';
+?>
+```
 
 ### Booleans ###
 
@@ -216,16 +273,16 @@ $foo = 3.123; //Type Float float(3.123)
 
 ### Type Juggling ###
 
-PHP variables are scalar. This means that they do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let's play around with it a little.
+PHP is a *dynamically typed* language. This means that variables in PHP do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let's play around with it a little.
 
 ``` {.php .numberLines}
 <?php
 $a = '0';
-var_dump($a);
+var_dump($a); // string(1) "0"
 $a = $a + 2;
-var_dump($a);
+var_dump($a); // int(2)
 $a = 5 + "10 Little Piggies";
-var_dump($a);
+var_dump($a); // int(15)
 ?>
 ```
 
@@ -236,7 +293,7 @@ combining Strings with integers]
 
 ### `if` ###
 
-A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an `if` statement. An `if` statement is best described as "IF a specific condition proves true, execute this code".
+A big part of logic in programming is executing certain code when a set of conditions are met. In PHP this is accomplished with an `if` statement. An `if` statement is best described as "if a specific condition proves true, execute this code".
 
 ``` {.php .numberLines}
 <?php
@@ -246,31 +303,54 @@ if (5 == 5){
 ?>
 ```
 
-In this example, the condition is that 5 must equal 5. And of course the answer is yes, or true. And when the condition evaluates as true, the code within the braces is executed. It is worthy to note that conditional statements always require a true condition to execute, even if the condition is that something must prove false. For example:
+In this example, the condition is that 5 must equal 5. And of course the answer is yes, or `true`. And when the condition evaluates as `true`, the code within the braces is executed.
+
+Notice that we have to use *two equals signs* (`==`) when we are checking whether two things are equal. Why? Well, we already use a single equals sign to *assign* a value to a variable.
+
+``` {.php .numberLines}
+<?php
+
+$x = '5'; // Assign the value '5' (a string) to the variable $x
+
+$x == 5; // Return true if the value stored in $x equals 5,
+         // allowing PHP to type juggle, and false otherwise.
+         //
+         // In this case, this should return true.
+
+$x === 5; // Return true if the value stored in $x equals 5,
+          // without allowing any type juggling.
+          //
+          // In this case, we get false because $x is a string
+          // and 5 is an integer.
+?>
+```
+
+If you need to execute a branch of code when something is `false`, you can use use '`!`', the *not operator*. For example:
 
 ``` {.php .numberLines}
 <?php
 $foo = false;
+// Read this as "if not $foo"
 if (!$foo){
     echo 'Yes! $foo was false.';
 }
 ?>
 ```
 
-In this example, the condition is that the variable `$foo` must be false. However, if `$foo` is false, the condition still proves true because it is true that `$foo` is false.
-
-With `if` statements you can also have multiple conditions using the AND/OR operators.
+With `if` statements you can also link multiple conditions together using the *logical and* (`&&`) and *logical or* (`||`) operators.
 
 ``` {.php .numberLines}
 <?php
 $foo = false;
-if (!$foo && 5 == 5 || 4 == 4){
-    echo 'Yes! $foo was false AND either 5 equals 5 OR 4 equals 5 OR 4 equals 4.';
+if (!$foo && (5 == 5 || 4 == 4)){
+    echo 'Yes! $foo was false AND either 5 equals 5 OR 4 equals 4.';
 }
 ?>
 ```
 
-It is very important to think about the logic of your conditions. If you have two conditions and use the AND operator, BOTH conditions must prove true. If you use the OR operator, AT LEAST one or both conditions must prove true. In this example, `$foo` must be false AND EITHER 5 must equal 5 OR 4 must equal 4.
+It is very important to think about the logic of your conditions. If you have two conditions and use `&&`, both conditions must prove `true`. If you use `||`, one or both conditions must prove `true`. Like in math, you can use parentheses to show which comparison must be performed first.
+
+In this example, `$foo` must be false and either `5` must equal `5` or `4` must equal `4`.
 
 ### `elseif` ###
 
@@ -314,7 +394,9 @@ Create a series of conditions using `if`, `elseif`, and `else`. For an extra cha
 
 ## User Defined Functions ##
 
-Let's go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write `function` followed by the function name. Function names follow the same rules as other labels in PHP. A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
+Let's go back to functions. I mentioned earlier that functions can be user-defined. To define a function we simply write `function` followed by the function name. Function names follow the same rules as other labels in PHP, just like [variables do](#variables).
+
+Following the function name we have two parentheses. Inside those parentheses is where we would define any parameters for our function. We remember from our earlier discussion on functions; parameters are pieces of information that get passed to functions. For our example we will use one parameter `$text`.
 
 ``` {.php .numberLines}
 <?php
@@ -337,7 +419,7 @@ showText('Hello World!');
 
 That's better. Now our function is declared and called. From a technical perspective, a function does not have to be defined before it is called (unless it is defined conditionally using an `if` statement) but it is good programming practice to define functions before they are called for easier readability.
 
-Let's try something else. Let's have the function return it to be output.
+Let's try something else. Let's have the function *return* its value instead of printing it.
 
 ``` {.php .numberLines}
 <?php
@@ -356,7 +438,9 @@ Create a function that is passed information, does something with it, and return
 
 ## Variable Scope ##
 
-Something very important to note is the scope of a variable. The scope of a variable is basically where it can be accessed from. Most variables can only be accessed from within their script and any script that is included in that script, which is to say they only have a single scope. Function parameters are only accessible from within their functions and variables defined outside a function are not available inside (unless passed through a parameter). Using the `global` keyword within a function will allow direct access to variables outside the function.
+Something very important to note is the scope of a variable. The scope of a variable is basically where it can be accessed from. Most variables can only be accessed from within their script and any script that is included in that script, which is to say they only have a single scope. Function parameters are only accessible from within their functions and variables defined outside a function are not available inside (unless passed through a parameter).
+
+Using the `global` keyword within a function will allow direct access to variables outside the function, but this is something that should generally be avoided.
 
 ### Superglobal Variables ##
 
@@ -408,6 +492,7 @@ The `while` loop is the most basic of loops. The `while` loops checks for a cond
 ``` {.php .numberLines}
 <?php
 $i = 0;
+// <= means "less than or equal to"
 while ($i <= 10){
     echo $i . '<br>';
     $i++;
@@ -500,7 +585,9 @@ Create a PHP file that accepts data from an instructor created form, validates i
 
 # MySQL #
 
-MySQL is the world's most popular open-source database engine. You will encounter it on nearly every web host and it's uses far exceed that of just website applications. MySQL can be used to stone information for any application. MySQL is its own application, completely separate from PHP. It offers a username/password authentication system to access databases, ensuring that they aren't open to the world. It also allows certain users to be given specific permissions on a database; meaning that you can restrict what certain user accounts can do (i.e. only view data, or only add data).
+MySQL, usually pronounced *my ess cue ell* or *my sequel*, is the world's most popular open-source database engine. You will encounter it on nearly every web host and its uses far exceed that of just website applications. MySQL can be used to store information for any application.
+
+MySQL is its own application, completely separate from PHP. It offers a username/password authentication system to access databases, ensuring that they aren't open to the world. It also allows certain users to be given specific permissions on a database; meaning that you can restrict what certain user accounts can do (e.g. only view data, or only add data).
 
 ## Databases, Tables, Columns, and Rows ##
 
@@ -514,9 +601,11 @@ Where each column and row meet is called a cell. Each cell can have its own set 
 
 When you run a command on the SQL database it's called a query. There are many different kinds of queries for creating new databases and tables, and much more, but for today we are going to focus on the ones that manipulate data within a database table that has already been created. The query syntax can become very complicated so it will be explained as simply as possible.
 
+Queries often read a little bit like natural language, but they must be written using specific formats.
+
 ### Insert ###
 
-Self-explanatory really. An insert query is used to insert data into a table. You can use it to insert one or multiple rows at one time. The syntax for a basic insert query is [type]:
+An *insert query* is used to insert data into a table. You can use it to insert one or multiple rows at one time. The syntax for a basic insert query is:
 
 ``` {.sql}
 INSERT INTO tbl_name (column1, column2, column3) VALUES (1, 2, 3), (4, 5, 6), (7, 8, 9);
@@ -526,13 +615,13 @@ Note that the proper syntax for SQL queries has a semi-colon at the end of each 
 
 ### Select ###
 
-This is the most commonly used SQL query. A select query searches the table for a specific set of conditions and selects only those rows that match to return. The syntax for a basic select query is [type]:
+This is the most commonly used SQL query. A *select query* searches the table for a specific set of conditions and selects only those rows that match to return. The syntax for a basic select query is:
 
 ``` {.sql}
 SELECT column1, column2 FROM tbl_name WHERE column1 = 1;
 ```
 
-Note the paralanguage structure of the query.
+Note that in SQL we use a single `=` to compare two things, whereas in PHP we had to use two or three.
 
 ### Update ###
 
@@ -564,7 +653,11 @@ $db = new mysqli('localhost', 'username', 'password', 'database_name');
 ?>
 ```
 
-This code will create a new MySQLi object using the database server, username, password, and the actual database name. It's important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use `localhost`, whereas if you use a remote MySQL server that is different from your web server, use that server's IP address.
+This code will create a new MySQLi object using the database server, username, password, and the actual database name. It's important to remember that the database server field is relative to the location PHP is being executed. For example, if PHP and MySQL are on the same server then use `localhost`, whereas if you use a remote MySQL server that is different from your web server, use that server's domain name or IP address.
+
+#### A note on `localhost` ####
+
+What's this `localhost` thing? It's a special computer name that represents the machine where the code is running. That's why you should use it if your PHP code and your MySQL database are running on the same machine.
 
 ### Execute Queries ###
 
