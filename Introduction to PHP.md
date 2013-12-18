@@ -53,7 +53,7 @@ Because PHP files are just "scripts" of instructions, they are essentially just 
 
 ## Delimiters ##
 
-PHP is uniquely suited for web design, because it uses delimiters for its code. Any text outside the delimiters is passed through the interpreter untouched, while code within the delimiters is executed.
+PHP uses *delimiters* for its code. Any text outside the delimiters is passed through the interpreter untouched, while code within the delimiters is executed.
 
 ``` {.php .numberLines}
 <?php
