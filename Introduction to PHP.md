@@ -124,6 +124,10 @@ echo 'Can you hear me, World?';
 ?>
 ```
 
+## Dealing With Errors ##
+
+It's inevitable that at some point during your code writing you're going to make a mistake.  Sometimes it's as simple as forgetting a semi-colon, while other times the whole logic of your application has a flaw.  Understaning the different types of errors that are thrown by PHP makes the debugging process a much smoother experience.
+
 ## Functions, Parameters, and Return Values ##
 
 A major part of any programming language is functions. You'll also hear them referred to as methods. A function is a collection of instructions that preform a specific action. Basically, functions perform a specific function.
