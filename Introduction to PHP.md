@@ -153,7 +153,7 @@ This website contains the documentation for PHP along with tons of user-contribu
 [Conduct a brief walkthrough of PHP.net and search for the function. Highlight the examples, related functions, and
 user contributed content.]
 
-*Use caution when referencing user-contributed code. This code may be incorrect, insecure, or use poor coding practices. It is better to use this code as a guideline to writing your own version.*
+*Use caution when referencing user-contributed code. This code may be incorrect, insecure, or use poor coding practices. While the use of libraries and code snippits is often extremely beneficial and enables you to expand the functionality of your applications, some consideration into the source goes a long way toward preventing future bugs or vulnerabilities.*
 
 As we proceed through this course, more and more of the code is going to come from your heads rather than being given to you by me. PHP.net is going to be a great resource for you to reference and help yourselves learn.
 
