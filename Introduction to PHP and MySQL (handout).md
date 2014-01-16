@@ -1,5 +1,5 @@
 ﻿% Introduction to PHP and MySQL
-% Andrew Taylor
+% Andrew Taylor (@roohtaylor)
 
 # Connection information #
 
