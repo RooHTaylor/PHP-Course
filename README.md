@@ -18,6 +18,10 @@ Before building, ensure that you have the following dependencies installed.
 
 ### Building ###
 
-Once the dependencies have been installed, build a PDF like this:
+Once the dependencies have been installed, build PDFs like this:
 
-    pandoc --toc -s -o "Introduction to PHP.pdf" "Introduction to PHP.md"
+    pandoc --toc -s -o "Introduction to PHP.pdf" \
+        -V graphics=true -B hackademy-logo.tex "Introduction to PHP.md"
+
+    pandoc --toc -s -o "Introduction to PHP (handout).pdf" \
+        -B hackademy-logo.tex "Introduction to PHP (handout).md"

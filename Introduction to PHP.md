@@ -1,8 +1,5 @@
 % Introduction to PHP and MySQL
-% Andrew Taylor
-% October 24, 2013
-
-![](images/hackademy.png)
+% Andrew Taylor (@roohtaylor)
 
 ## License ##
 
