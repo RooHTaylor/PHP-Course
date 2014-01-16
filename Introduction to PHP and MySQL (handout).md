@@ -235,9 +235,9 @@ Conditional statements are used to execute specific code if certain conditions a
 
 Often times there is a requirement to repeat a certain section of code a number of times before carrying on. Rather than typing out that same section of code over and over again, we can use loops to do it for us.
 
-## While ##
+## `while` ##
 
-The while loop is the most basic of loops. The while loops checks for a condition, and as long as the condition proves true it will continue to execute the code within its braces. The condition check happens at the start of each loop iteration, which means the while loop will only execute if the condition proves true at the beginning. It also means that if the condition changes from true to false in the middle of an iteration, the code will continue to execute until the end of that iteration.
+The `while` loop is the most basic of loops. The `while` loops checks for a condition, and as long as the condition proves true it will continue to execute the code within its braces. The condition check happens at the start of each loop iteration, which means the `while` loop will only execute if the condition proves true at the beginning. It also means that if the condition changes from true to false in the middle of an iteration, the code will continue to execute until the end of that iteration.
 
 ``` {.php .numberLines}
 <?php
@@ -249,9 +249,9 @@ while ($i <= 10){
 ?>
 ```
 
-## Do-while ##
+## `do` ... `while` ##
 
-Do-while loops are basically the same thing as while loops. The exception being that a do-while checks the condition at the end of a loop iteration. This means that the code within the braces is executed once before the condition is checked.
+`do` ... `while` loops are basically the same thing as `while` loops. The exception being that a `do` ... `while` checks the condition at the *end of* a loop iteration. This means that the code within the braces is executed once before the condition is checked.
 
 ``` {.php .numberLines}
 <?php
@@ -263,15 +263,15 @@ do {
 ?>
 ```
 
-This code will only execute once. Once the condition is checked it will prove false and not execute again. Do-while loops also support the conditional break statement. The break statement will end execution of the loop code and proceed with the rest of the script.
+This code will only execute once. Once the condition is checked it will prove false and not execute again. `do` ... `while` loops also support the conditional `break` statement. The `break` statement will end execution of the loop code and proceed with the rest of the script.
 
-## For ##
+## `for` ##
 
-For loops are one of the most complex loop types. For loops evaluate/execute three expressions as they run, and can be used any number of ways.
+`for` loops are one of the most complex loop types. `for` loops evaluate/execute three expressions as they run, and can be used any number of ways.
 
-The first expression is evaluated/executed once at the beginning of the for loop. The second expression is evaluated at the beginning of each loop iteration. If it evaluates to true, the loop continues; otherwise the loop ends. The third expression is evaluated/executed at the end of each loop iteration. Each of the expression groups can have multiple expressions separated by a comma, or they can be left empty. If the second expression is left empty it defaults to true and the loop will run indefinitely.
+The first expression is evaluated/executed once at the beginning of the `for` loop. The second expression is evaluated at the beginning of each loop iteration. If it evaluates to true, the loop continues; otherwise the loop ends. The third expression is evaluated/executed at the end of each loop iteration. Each of the expression groups can have multiple expressions separated by a comma, or they can be left empty. If the second expression is left empty it defaults to true and the loop will run indefinitely.
 
-For loops also support the break statement, to end execution at any point during the iteration.
+`for` loops also support the `break` statement, to end execution at any point during the iteration.
 
 ``` {.php .numberLines}
 <?php
@@ -305,9 +305,9 @@ for ($i = 1, $j = 0; $i <= 10; $j += $i, print $i, $i++);
 
 Each of these examples will output the numbers 1 through 10.
 
-## Foreach ##
+## `foreach` ##
 
-A foreach loop is specifically purposed to loop through array and object values. An error will be generated if you try to run a foreach loop that references a non-array or object. It steps through each value of an array, and executes the code in its braces. The two syntaxes provide you with access to both the array key and the value, depending on which you use.
+A `foreach` loop is specifically purposed to loop through array and object values. An error will be generated if you try to run a `foreach` loop that references a non-array or object. It steps through each value of an array, and executes the code in its braces. The two syntaxes provide you with access to both the array key and the value, depending on which you use.
 
 ``` {.php .numberLines}
 <?php
@@ -318,7 +318,7 @@ foreach ($i as $value){
 ?>
 ```
 
-A foreach loop uses an array's internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
+A `foreach` loop uses an array's internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
 
 ``` {.php .numberLines}
 <?php
