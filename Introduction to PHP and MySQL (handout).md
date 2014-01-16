@@ -1,8 +1,6 @@
 ﻿% Introduction to PHP and MySQL
 % Andrew Taylor
 
-![](images/hackademy.png)
-
 # Connection information #
 
 -------------- --------

@@ -2,8 +2,6 @@
 % Andrew Taylor
 % October 24, 2013
 
-![](images/hackademy.png)
-
 ## License ##
 
 This document and all supporting documents are licensed under the [Creative Commons Attribution-NonCommercialShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-nc-sa/3.0/).
