@@ -178,7 +178,7 @@ $foo = 3.123; //Type Float float(3.123)
 
 ## Type Juggling ##
 
-PHP variables are scalar. This means that they do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let's play around with it a little.
+PHP is a *dynamically typed* language. This means that variables in PHP do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let's play around with it a little.
 
 ``` {.php .numberLines}
 <?php
