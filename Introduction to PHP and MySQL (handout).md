@@ -158,7 +158,7 @@ An integer is a whole number. -3, -2, -1, 1, 2, 3, 4, 5 … are examples of inte
 
 ### Strings ###
 
-A String is text. A string is defined with quotations. Strings that are defined with double quotes instead of single quotes will automatically expand variables and special characters like newlines (\n).
+A String is text. A string is defined with quotations. Strings that are defined with double quotes instead of single quotes will automatically expand variables and special characters like newlines (`\n`).
 
 ### Booleans ###
 
