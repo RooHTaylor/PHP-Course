@@ -133,7 +133,7 @@ Example      Name  Result
 `$a && $b`   And   `TRUE` if both `$a` and `$b` are `TRUE`.
 `$a || $b`   Or    `TRUE` if either `$a` or `$b` is `TRUE`.
 
-The reason for the two different variations of "and" and "or" operators is that they operate at different precedences. (See Operator Precedence on PHP.net.)
+The reason for the two different variations of "and" and "or" operators is that they operate at different precedences. (See [Operator Precedence](http://ca1.php.net/manual/en/language.operators.precedence.php) on PHP.net.)
 
 ## Label Rules ##
 
@@ -166,7 +166,7 @@ Booleans are the simplest data type. Booleans are true or false, and defined usi
 
 ### Floating Point Numbers ###
 
-Also known as "floats", "doubles", or "real numbers". Floats are decimal or exponential numbers. We aren't going to be working with them today, but if you would like to know more about them you can read about them on the PHP.net website.
+Also known as "floats", "doubles", or "real numbers". Floats are decimal or exponential numbers. We aren't going to be working with them today, but if you would like to know more about them you can [read about them](http://www.php.net/manual/en/language.types.float.php) on the PHP.net website.
 
 ``` {.php .numberLines}
 <?php
@@ -330,4 +330,4 @@ print_r($i);
 
 # License #
 
-This document and all supporting documents are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported license.
+This document and all supporting documents are licensed under the Creative Commons [Attribution-NonCommercial-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
