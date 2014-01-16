@@ -25,7 +25,7 @@ Password:
 1. Type Juggling
 1. Functions, Parameters, and Return Values
 1. PHP.net
-1. Conditional Statements	
+1. Conditional Statements
 1. User Defined Functions
 1. Variable Scope
 1. Arrays
