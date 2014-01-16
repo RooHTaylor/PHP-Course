@@ -35,13 +35,13 @@
 
 ## PHP Files and Basic Syntax ##
 
-PHP files are parsed and executed in real-time on the server, so they’re formatted just like text files when they are written and stored. PHP files can have several different extensions to support different conditions, but the best extension to use is `.php`.
+PHP files are parsed and executed in real-time on the server, so they're formatted just like text files when they are written and stored. PHP files can have several different extensions to support different conditions, but the best extension to use is `.php`.
 
-Don’t forget to use *delimiters* around your PHP code. Only code between the delimiters is executed. Anything outside the delimiters is treated as plain text and passed through untouched.
+Don't forget to use *delimiters* around your PHP code. Only code between the delimiters is executed. Anything outside the delimiters is treated as plain text and passed through untouched.
 
 Remember to end each instruction with a semicolon (`;`). Your script will not execute and throw errors if you forget one.
 
-Don’t forget to add comments in your code to help yourself and others. Comments are ways of explaining what each section of your code is doing. There are three styles of comments in PHP and you can use them all interchangeably.
+Don't forget to add comments in your code to help yourself and others. Comments are ways of explaining what each section of your code is doing. There are three styles of comments in PHP and you can use them all interchangeably.
 
 ## Function Syntax ##
 
@@ -129,18 +129,18 @@ Booleans are the simplest data type. Booleans are true or false, and defined usi
 
 ### Floating Point Numbers ###
 
-Also known as "floats", "doubles", or "real numbers". Floats are decimal or exponential numbers. We aren’t going to be working with them today, but if you would like to know more about them you can read about them on the PHP.net website.
+Also known as "floats", "doubles", or "real numbers". Floats are decimal or exponential numbers. We aren't going to be working with them today, but if you would like to know more about them you can read about them on the PHP.net website.
 
 ### Type Juggling ###
 
-PHP variables are scalar. This means that they do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let’s play around with it a little.
+PHP variables are scalar. This means that they do not need to have a data type explicitly defined, and that the data type of a variable will change depending on the context in which it is used. Let's play around with it a little.
 
 ## Arrays ##
 
 Arrays are a special data type that contain an index of data. An easy way to think about it is that arrays are a list of variables contained within a single variable. In PHP arrays can be indexed numerically or with a String. Arrays that have a String index are called associative arrays, but are also referred to as "hash tables" by some. A single array can have both numerical and String keys at the same time.
 
 Arrays are indexed with integers starting with 0 by default. If you set only String keys and then append to the array it will take the next available integer value, which would be 0. If you set integer key 5 and then append it will take the next available integer key, which it will assume is 6.
-Access the data within an array by referencing it’s key within square brackets after the array name.
+Access the data within an array by referencing it's key within square brackets after the array name.
 
 ## Conditional Statements ##
 
@@ -174,7 +174,7 @@ Each of these examples will output the numbers 1 through 10.
 
 A foreach loop is specifically purposed to loop through array and object values. An error will be generated if you try to run a foreach loop that references a non-array or object. It steps through each value of an array, and executes the code in its braces. The two syntaxes provide you with access to both the array key and the value, depending on which you use.
 
-A foreach loop uses an array’s internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
+A foreach loop uses an array's internal pointer to iterate through each value, so changing the pointer during the loop could have unexpected results. In this example, only the value of each array index is available. The following shows the alternate syntax allowing access to the key as well.
 
 # License #
 
