@@ -129,7 +129,7 @@ Remember to use or capture the return value of a function if required. Parameter
 |`$a xor $b`|Xor|`TRUE` if either `$a` or `$b` is `TRUE`, but not both.|
 |`! $a`|Not|`TRUE` if `$a` is not `TRUE`.|
 |`$a && $b`|And|`TRUE` if both `$a` and `$b` are `TRUE`.|
-|`$a || $b`|Or|`TRUE` if either `$a` or `$b` is `TRUE`.|
+|<code>$a &#124;&#124; $b</code>|Or|`TRUE` if either `$a` or `$b` is `TRUE`.|
 
 The reason for the two different variations of "and" and "or" operators is that they operate at different precedences. (See [Operator Precedence](http://ca1.php.net/manual/en/language.operators.precedence.php) on PHP.net.)
 
