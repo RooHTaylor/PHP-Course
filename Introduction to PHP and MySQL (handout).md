@@ -171,7 +171,7 @@ Also known as "floats", "doubles", or "real numbers". Floats are decimal or expo
 <?php
 $foo = true; //Type Boolean bool(true)
 $foo = 10; //Type Integer int(10)
-$foo = “10”; //Type String String(2)
+$foo = "10"; //Type String String(2)
 $foo = 3.123; //Type Float float(3.123)
 ?>
 ```
@@ -182,11 +182,11 @@ PHP is a *dynamically typed* language. This means that variables in PHP do not n
 
 ``` {.php .numberLines}
 <?php
-$a = '0'; // Is String(1) “0”
+$a = '0'; // Is String(1) "0"
 var_dump($a);
 $a = $a + 2; // Is now int(2)
 var_dump($a);
-$a = 5 + “10 Little Piggies”; // Is int(15)
+$a = 5 + "10 Little Piggies"; // Is int(15)
 var_dump($a);
 ?>
 ```
