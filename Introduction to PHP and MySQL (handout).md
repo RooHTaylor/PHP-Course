@@ -3,13 +3,13 @@
 
 # Connection information #
 
--------------- --------
-Domain:
-FTP Port:      21
-Username:
-cPanel Login:  cpanel
-Password:
--------------- --------
+|||
+|:--|---|
+|Domain:||
+|FTP Port:|21|
+|Username:||
+|cPanel Login:|cpanel|
+|Password:||
 
 # Course Outline #
 
@@ -79,57 +79,57 @@ Remember to use or capture the return value of a function if required. Parameter
 
 ## Arithmetic Operators ##
 
-Example  Type            Result
--------- --------------- --------------------------------------
-`-5`     Negation        Opposite of 5 `[(int)-5]`
-`5 + 5`  Addition        Sum of 5 and 5 `[(int)10]`
-`5 - 3`  Subtraction     Difference of 5 and 3 `[(int)2)]`
-`3 * 4`  Multiplication  Product of 3 and 4 `[(int)12]`
-`3 / 5`  Division        Quotient of 3 and 5 `[(float)0.6]`
-`5 % 3`  Modulus         Remainder of 5 divided by 3 `[(int)2]`
+|Example|Type|Result|
+|:------|:---|:-----|
+|`-5`|Negation|Opposite of 5 `[(int)-5]`|
+|`5 + 5`|Addition|Sum of 5 and 5 `[(int)10]`|
+|`5 - 3`|Subtraction|Difference of 5 and 3 `[(int)2)]`|
+|`3 * 4`|Multiplication|Product of 3 and 4 `[(int)12]`|
+|`3 / 5`|Division|Quotient of 3 and 5 `[(float)0.6]`|
+|`5 % 3`|Modulus|Remainder of 5 divided by 3 `[(int)2]`|
 
 ## Assignment Operators ##
 
-Assignment  Same as
------------ ---------------
-`$a = $b`   N/A
-`$a += $b`  `$a = $a + $b`
-`$a -= $b`  `$a = $a - $b`
-`$a *= $b`  `$a = $a * $b`
-`$a /= $b`  `$a = $a / $b`
-`$a %= $b`  `$a = $a % $b`
-`$a .= $b`  `$a = $a . $b`
+|Assignment|Same as|
+|:---------|:------|
+|`$a = $b`|N/A|
+|`$a += $b`|`$a = $a + $b`|
+|`$a -= $b`|`$a = $a - $b`|
+|`$a *= $b`|`$a = $a * $b`|
+|`$a /= $b`|`$a = $a / $b`|
+|`$a %= $b`|`$a = $a % $b`|
+|`$a .= $b`|`$a = $a . $b`|
 
 ## Comparison Operators ##
 
-Example      Name                      Result
------------- ------------------------- ----------------------------------------------------------------------
-`$a == $b`   Equal                     `TRUE` if `$a` is equal to `$b` after type juggling.
-`$a === $b`  Identical                 `TRUE` if `$a` is equal to `$b`, and they are of the same type.
-`$a != $b`   Not equal                 `TRUE` if `$a` is not equal to `$b` after type juggling.
-`$a <> $b`   Not equal                 `TRUE` if `$a` is not equal to `$b` after type juggling.
-`$a !== $b`  Not identical             `TRUE` if `$a` is not equal to `$b`, or they are not of the same type.
-`$a < $b`    Less than                 `TRUE` if `$a` is strictly less than `$b`.
-`$a > $b`    Greater than              `TRUE` if `$a` is strictly greater than `$b`.
-`$a <= $b`   Less than or equal to     `TRUE` if `$a` is less than or equal to `$b`.
-`$a >= $b`   Greater than or equal to  `TRUE` if `$a` is greater than or equal to `$b`.
+|Example|Name|Result|
+|:------|:---|:-----|
+|`$a == $b`|Equal|`TRUE` if `$a` is equal to `$b` after type juggling.|
+|`$a === $b`|Identical|`TRUE` if `$a` is equal to `$b`, and they are of the same type.|
+|`$a != $b`|Not equal|`TRUE` if `$a` is not equal to `$b` after type juggling.|
+|`$a <> $b`|Not equal|`TRUE` if `$a` is not equal to `$b` after type juggling.|
+|`$a !== $b`|Not identical|`TRUE` if `$a` is not equal to `$b`, or they are not of the same type.|
+|`$a < $b`|Less than|`TRUE` if `$a` is strictly less than `$b`.|
+|`$a > $b`|Greater than|`TRUE` if `$a` is strictly greater than `$b`.|
+|`$a <= $b`|Less than or equal to|`TRUE` if `$a` is less than or equal to `$b`.|
+|`$a >= $b`|Greater than or equal to|`TRUE` if `$a` is greater than or equal to `$b`.|
 
 ## String Operators ##
 
-Example    Name            Result
----------- --------------- ----------------------------------
-`$a . $b`  Concatenation   Connect the two strings into one
+|Example|Name|Result|
+|:------|:---|:-----|
+|`$a . $b`|Concatenation|Connect the two strings into one|
 
 ## Logical Operators ##
 
-Example      Name  Result
------------- ----- -----------------------------------------------
-`$a and $b`  And   `TRUE` if both `$a` and `$b` are `TRUE`.
-`$a or $b`   Or    `TRUE` if either `$a` or `$b` is `TRUE`.
-`$a xor $b`  Xor   `TRUE` if either `$a` or `$b` is `TRUE`, but not both.
-`! $a`       Not   `TRUE` if `$a` is not `TRUE`.
-`$a && $b`   And   `TRUE` if both `$a` and `$b` are `TRUE`.
-`$a || $b`   Or    `TRUE` if either `$a` or `$b` is `TRUE`.
+|Example|Name|Result|
+|:------|:---|:-----|
+|`$a and $b`|And|`TRUE` if both `$a` and `$b` are `TRUE`.|
+|`$a or $b`|Or|`TRUE` if either `$a` or `$b` is `TRUE`.|
+|`$a xor $b`|Xor|`TRUE` if either `$a` or `$b` is `TRUE`, but not both.|
+|`! $a`|Not|`TRUE` if `$a` is not `TRUE`.|
+|`$a && $b`|And|`TRUE` if both `$a` and `$b` are `TRUE`.|
+|`$a || $b`|Or|`TRUE` if either `$a` or `$b` is `TRUE`.|
 
 The reason for the two different variations of "and" and "or" operators is that they operate at different precedences. (See [Operator Precedence](http://ca1.php.net/manual/en/language.operators.precedence.php) on PHP.net.)
 
