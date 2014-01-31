@@ -25,3 +25,7 @@ Once the dependencies have been installed, build PDFs like this:
 
     pandoc --toc -s -o "Introduction to PHP (handout).pdf" \
         -B hackademy-logo.tex "Introduction to PHP (handout).md"
+
+or if you have PHP installed locally, use the build script:
+
+    php build.php --instructor --student
