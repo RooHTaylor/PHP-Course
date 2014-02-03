@@ -23,8 +23,10 @@ Once the dependencies have been installed, build PDFs like this:
     pandoc --toc -s -o "Introduction to PHP.pdf" \
         -V graphics=true -B hackademy-logo.tex "Introduction to PHP.md"
 
-    pandoc --toc -s -o "Introduction to PHP (handout).pdf" \
-        -B hackademy-logo.tex "Introduction to PHP (handout).md"
+    sed -e 's/&#124;/|/g' \
+        < Introduction\ to\ PHP\ and\ MySQL\ \(handout\).md \
+        | sed -re 's/<\/?code>/`/g' \
+        | pandoc -o Introduction\ to\ PHP\ and\ MySQL\ \(handout\).pdf
 
 or if you have PHP installed locally, use the build script:
 
