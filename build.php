@@ -28,12 +28,12 @@ if (array_key_exists('h', $options) or array_key_exists('help', $options)) {
 
 
 if (checkDependencies()) {
-    $command = 'pandoc --toc -s -o "%s" -V graphics=true -B hackademy-logo.tex "%s"';
+    $command = 'pandoc --toc -s -o "%s" -V graphics=true -B hackademy-logo.tex';
 
     if (array_key_exists('i', $options) or
             array_key_exists('instructor', $options)) {
         echo 'Building instructor PDF...';
-        exec(sprintf($command, 'Introduction to PHP.pdf', 'Introduction to PHP.md'), $output, $retval);
+        exec(sprintf($command, 'Introduction to PHP.pdf') . ' "Introduction to PHP.md"', $output, $retval);
         if ($retval === 0) {
             echo "success\n";
         } else {
@@ -44,7 +44,7 @@ if (checkDependencies()) {
     if (array_key_exists('s', $options) or
             array_key_exists('student', $options)) {
         echo 'Building student PDF...';
-        exec(sprintf($command, 'Introduction to PHP and MySQL (handout).pdf', 'Introduction to PHP and MySQL (handout).md'), $output, $retval);
+        exec("sed -e 's/&#124;/|/g' < Introduction\ to\ PHP\ and\ MySQL\ \(handout\).md | sed -re 's/<\/?code>/`/g' | " . sprintf($command, 'Introduction to PHP and MySQL (handout).pdf', 'Introduction to PHP and MySQL (handout).md'), $output, $retval);
         if ($retval === 0) {
             echo "success\n";
         } else {
@@ -87,7 +87,7 @@ END;
 function checkDependencies()
 {
     $foundAll = true;
-    $dependencies = array('pandoc', 'latex');
+    $dependencies = array('latex', 'pandoc', 'sed');
     foreach ($dependencies as $dep) {
         echo "Looking for $dep...";
         exec("which $dep", $output, $returnValue);
